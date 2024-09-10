@@ -6,7 +6,7 @@ from src.utils import load_api_keys, set_openai_api_configurations
 
 def main(cycles=3):
     # File paths
-    response_file = 'data/new_responses.csv'
+    response_file = 'data/responses.csv'
     ground_truth_file = 'data/ground_truth.csv'
     properties_file = 'data/properties.json'
     subjects_file = 'data/subjects.json'
