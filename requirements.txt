@@ -1,0 +1,4 @@
+numpy
+openai
+pandas
+python-dotenv

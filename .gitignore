@@ -57,5 +57,4 @@ var/
 # mypy cache
 .mypy_cache/
 
-# nuXmv
-nuXmv/
+.env

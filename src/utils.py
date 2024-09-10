@@ -1,106 +1,68 @@
-# src/utils.py
-
 import os
-import openai
-import logging
-import json
+from dotenv import load_dotenv
+from openai import AzureOpenAI
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+class AzureOpenAIClient:
+    def __init__(self):
+        # Load environment variables from .env file
+        load_dotenv()
+        self._validate_env_vars()
+        self._configure_openai_api()
 
-def load_api_keys(file_path=None):
-    """
-    Load API keys from a JSON file and set them as environment variables.
-    
-    Parameters:
-        file_path (str): Path to the JSON file containing the API keys.
-    
-    Raises:
-        FileNotFoundError: If the file_path does not exist.
-        json.JSONDecodeError: If the file is not a valid JSON document.
-    """
-    if file_path is None:
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        file_path = os.path.join(base_dir, 'config', 'api_keys.json')
-    
-    try:
-        with open(file_path, 'r') as file:
-            api_keys = json.load(file)
-        for key, value in api_keys.items():
-            os.environ[key.upper()] = value
-        logging.info("API keys loaded successfully.")
-    except FileNotFoundError:
-        logging.error(f"API keys file not found: {file_path}")
-        raise
-    except json.JSONDecodeError as e:
-        logging.error(f"Error decoding JSON from file: {file_path}")
-        raise
+    def _validate_env_vars(self):
+        """Validate that all required environment variables are set."""
+        required_vars = ['AZURE_OPENAI_API_KEY', 'AZURE_OPENAI_ENDPOINT', 'OPENAI_API_VERSION', 'AZURE_OPENAI_DEPLOYMENT_NAME']
+        missing_vars = [var for var in required_vars if not os.getenv(var)]
+        
+        if missing_vars:
+            raise Exception(f"Missing required environment variables: {', '.join(missing_vars)}")
 
-def validate_environment_variables(required_env_vars):
-    """
-    Validate that all required environment variables are set.
-    
-    Parameters:
-        required_env_vars (list): Keys of required environment variables.
-    
-    Returns:
-        bool: True if all required environment variables are set, False otherwise.
-    """
-    missing_vars = [var for var in required_env_vars if var not in os.environ]
-    if missing_vars:
-        logging.error(f"Missing required environment variables: {', '.join(missing_vars)}")
-        return False
-    return True
-
-def set_openai_api_configurations():
-    """
-    Set OpenAI API configurations using environment variables.
-    
-    Returns:
-        bool: True if configurations are applied successfully, False otherwise.
-    """
-    required_vars = ['OPENAI_API_KEY', 'OPENAI_DEPLOYMENT_NAME', 'OPENAI_API_BASE', 'OPENAI_API_TYPE', 'OPENAI_API_VERSION']
-    if not validate_environment_variables(required_vars):
-        logging.error("OpenAI API configurations are incomplete. Please check your environment variables.")
-        return False
-    
-    openai.api_key = os.environ['OPENAI_API_KEY']
-    openai.api_base = os.environ['OPENAI_API_BASE']
-    openai.api_type = os.environ['OPENAI_API_TYPE']
-    openai.api_version = os.environ['OPENAI_API_VERSION']
-    return True
-
-def send_prompt(prompt):
-    """
-    Send a text prompt to the OpenAI API for completion and retrieves the response.
-    
-    Parameters:
-        prompt (str): The text prompt to send.
-    
-    Returns:
-        str: The text content of the API response, or None if an error occurs.
-    """
-    messages = [{"role": "user", "content": prompt}]
-    try:
-        response = openai.ChatCompletion.create(
-            engine=os.environ['OPENAI_DEPLOYMENT_NAME'],
-            messages=messages,
-            max_tokens=300,
+    def _configure_openai_api(self):
+        """Configure the Azure OpenAI client using environment variables."""
+        self.client = AzureOpenAI(
+            api_key=os.getenv("AZURE_OPENAI_API_KEY"),  
+            azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"), 
+            api_version=os.getenv("OPENAI_API_VERSION")
         )
-        return str(response.choices[0].message.content.strip())
-    except Exception as e:
-        logging.error(f"Failed to send prompt to API: {e}")
-        return None
 
-# The __main__ function is typically not included in a utility module,
-# but you can keep it for testing purposes if needed.
-def test_utils():
-    load_api_keys()
-    if set_openai_api_configurations():
-        prompt = "Translate the following English sentence to French: 'Hello, how are you?'"
-        response = send_prompt(prompt)
+    def send_request(self, context, question):
+        """
+        Send a request to the Azure OpenAI API with the provided context and question.
+        
+        Parameters:
+            context (str): The context to be included in the system message.
+            question (str): The user's question to be sent to the API.
+        
+        Returns:
+            response: The API response if successful, otherwise None.
+        """
+        try:
+            # Sending a chat completion request
+            response = self.client.chat.completions.create(
+                model=os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME"),
+                messages=[
+                    {"role": "system", "content": context},
+                    {"role": "user", "content": question}
+                ]
+            )
+            return response
+        except Exception as e:
+            print(f"Failed request to API: {e}")
+            return None
+
+
+# Example usage
+if __name__ == '__main__':
+    context = "This is a test."
+    question = "Respond with 'test'."
+    
+    prompting = AzureOpenAIClient()
+    response = prompting.send_request(context, question)
+    
+    if response:
+        # Printing the response choices
+        print(response.choices[0].message.content)
+        print("\n\n\n")
         print(response)
     else:
-        print("Failed to set OpenAI API configurations.")
-
-if __name__ == '__main__':
-    test_utils()
+        print("No response received from the API.")
