@@ -4,30 +4,38 @@ from src.conversation import generate_triples
 # from src.correction import apply_corrections
 from src.utils import load_api_keys, set_openai_api_configurations
 
+# ---------- Main Script for Triple Analysis and Correction ----------
 def main(cycles=3):
+    """
+    Main function to run the triple generation, analysis, and correction over a specified number of cycles.
+    
+    Args:
+        cycles (int): Number of cycles to run the analysis. Defaults to 3.
+    """
     # File paths
     response_file = 'data/responses.csv'
     ground_truth_file = 'data/ground_truth.csv'
     properties_file = 'data/properties.json'
     subjects_file = 'data/subjects.json'
 
-    # Load API keys and set configurations
+    # Load API keys and set configurations for the OpenAI API
     load_api_keys("config/api_keys.json")
     set_openai_api_configurations()
 
     # Initialize a list to store results for all cycles
     metrics_list = []
 
+    # Loop through the specified number of cycles
     for cycle in range(cycles):
         print(f"Starting cycle {cycle + 1}")
 
         # Generate triples
         # generate_triples(subjects_file, properties_file, output_file=response_file)
 
-        # Analyze triples
+        # Analyze the generated triples
         results = analyze_triples(response_file, ground_truth_file, properties_file, subjects_file)
 
-        # Collect metrics
+        # Collect metrics for the current cycle
         cycle_metrics = {
             'cycle': cycle + 1,
             'average_precision': results['average_precision'],
@@ -35,18 +43,18 @@ def main(cycles=3):
             'cumulative_precision': results['cumulative_precision'],
             'f1_score': results['f1_score']
         }
-        
+
         # Append metrics for this cycle to the list
         metrics_list.append(cycle_metrics)
 
-        # Print metrics
+        # Print the metrics for the current cycle
         print(f"Cycle {cycle + 1} Results:")
         print(f"Average Precision: {results['average_precision']:.2f}")
         print(f"Average Recall: {results['average_recall']:.2f}")
         print(f"Cumulative Precision: {results['cumulative_precision']:.2f}")
         print(f"F1 Score: {results['f1_score']:.2f}")
 
-        # Save correction prompts
+        # Save correction prompts for the current cycle
         correction_df = pd.DataFrame(results['correction_prompts'], columns=['subject', 'correction_prompt'])
         correction_file = f'output/correction_prompts_cycle_{cycle + 1}.csv'
         correction_df.to_csv(correction_file, index=False)

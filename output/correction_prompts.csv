@@ -8,12 +8,6 @@ Error: Instance type 'date' not associated with any property for subject 'March 
 Triple: ['Edward R. Murrow', 'date of marriage', 'March 12, 1935']
 Error: Error: Property 'date of marriage' not found in properties.
 
-Triple: ['Edward R. Murrow', 'date of marriage', 'March 12, 1935']
-Error: Invalid subject type for Edward R. Murrow
-
-Triple: ['Edward R. Murrow', 'date of marriage', 'March 12, 1935']
-Error: Invalid object type for March 12, 1935
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q9353,"The following triples for the subject 'Q9353' need attention:
 
@@ -29,15 +23,6 @@ Error: Object 'Parliament' type 'government organization' does not satisfy the p
 
 Triple: ['Alexander Popham', 'employer', 'John Locke']
 Error: Subject 'Alexander Popham' type 'person' does not satisfy the property 'employer' subject constraints: ['group of humans', 'fictional human', 'fictional location', 'fictional character', 'human']
-
-Triple: ['John Locke', 'member of', 'Parliament']
-Error: Invalid object type for Parliament
-
-Triple: ['Alexander Popham', 'employer', 'John Locke']
-Error: Invalid subject type for Alexander Popham
-
-Triple: ['Alexander Popham', 'employer', 'John Locke']
-Error: Invalid object type for John Locke
 
 Unused Declarations:
 Triple: ['Autumn of 1652', 'instance of', 'time period']
@@ -145,9 +130,6 @@ Error: Object 'not specified' not defined as an instance.
 Triple: ['United Nations', 'instance of', 'international organization']
 Error: Instance type 'international organization' not valid for object 'United Nations' with property 'employer'
 
-Triple: ['Aung San Suu Kyi', 'employer', 'United Nations']
-Error: Invalid object type for United Nations
-
 Unused Declarations:
 Triple: ['Mahatma Gandhi', 'instance of', 'human']
 Note: Subject 'Mahatma Gandhi' is not used in other triples.
@@ -178,18 +160,6 @@ Error: Error: Property 'marriage' not found in properties.
 Triple: ['George S. Patton', 'marriage location', 'Beverly Farms, Massachusetts']
 Error: Error: Property 'marriage location' not found in properties.
 
-Triple: ['Beatrice Banning Ayer', 'father', 'Frederick Ayer']
-Error: Invalid object type for Frederick Ayer
-
-Triple: ['George S. Patton', 'marriage', 'May 26, 1910']
-Error: Invalid subject type for George S. Patton
-
-Triple: ['George S. Patton', 'marriage location', 'Beverly Farms, Massachusetts']
-Error: Invalid subject type for George S. Patton
-
-Triple: ['George S. Patton', 'marriage location', 'Beverly Farms, Massachusetts']
-Error: Invalid object type for Beverly Farms, Massachusetts
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q336018,"The following triples for the subject 'Q336018' need attention:
 
@@ -211,9 +181,6 @@ Errors:
 Triple: ['Rena Sofer', 'spouse', 'Sanford Bookstaver']
 Error: Subject 'Rena Sofer' type 'actress' does not satisfy the property 'spouse' subject constraints: ['human whose existence is disputed', 'legendary figure', 'mythical character', 'processional giant', 'person', 'fictional character', 'human']
 
-Triple: ['Rena Sofer', 'spouse', 'Sanford Bookstaver']
-Error: Invalid subject type for Rena Sofer
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q128560,"The following triples for the subject 'Q128560' need attention:
 
@@ -230,18 +197,6 @@ Error: Error: Property 'award received by' not found in properties.
 Triple: ['1948 James Tait Black Memorial Prize', 'award received by', 'The Heart of the Matter']
 Error: Error: Property 'award received by' not found in properties.
 
-Triple: ['1941 Hawthornden Prize', 'award received by', 'The Power and the Glory']
-Error: Invalid subject type for 1941 Hawthornden Prize
-
-Triple: ['1941 Hawthornden Prize', 'award received by', 'The Power and the Glory']
-Error: Invalid object type for The Power and the Glory
-
-Triple: ['1948 James Tait Black Memorial Prize', 'award received by', 'The Heart of the Matter']
-Error: Invalid subject type for 1948 James Tait Black Memorial Prize
-
-Triple: ['1948 James Tait Black Memorial Prize', 'award received by', 'The Heart of the Matter']
-Error: Invalid object type for The Heart of the Matter
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q240082,"The following triples for the subject 'Q240082' need attention:
 
@@ -257,12 +212,6 @@ Error: Instance type 'award' not associated with any property for subject 'Achie
 
 Triple: ['Seohyun', 'received', 'Achievement award at the graduation ceremony']
 Error: Error: Property 'received' not found in properties.
-
-Triple: ['Seohyun', 'received', 'Achievement award at the graduation ceremony']
-Error: Invalid subject type for Seohyun
-
-Triple: ['Seohyun', 'received', 'Achievement award at the graduation ceremony']
-Error: Invalid object type for Achievement award at the graduation ceremony
 
 Unused Declarations:
 Triple: ['August 2014', 'instance of', 'time']
@@ -290,21 +239,6 @@ Error: Object 'United States' not defined as an instance.
 Triple: ['Rebecca Romijn', 'country of citizenship', 'United States']
 Error: Object 'United States' not defined as an instance.
 
-Triple: [""Jerry O\\'Connell"", 'occupation', 'Detective Woody Hoyt']
-Error: Invalid subject type for Jerry O\'Connell
-
-Triple: [""Jerry O\\'Connell"", 'spouse', 'Rebecca Romijn']
-Error: Invalid subject type for Jerry O\'Connell
-
-Triple: ['Rebecca Romijn', 'spouse', ""Jerry O\\'Connell""]
-Error: Invalid subject type for Rebecca Romijn
-
-Triple: [""Jerry O\\'Connell"", 'country of citizenship', 'United States']
-Error: Invalid subject type for Jerry O\'Connell
-
-Triple: ['Rebecca Romijn', 'country of citizenship', 'United States']
-Error: Invalid subject type for Rebecca Romijn
-
 Unused Declarations:
 Triple: ['Crossing Jordan', 'instance of', 'NBC crime drama']
 Note: Subject 'Crossing Jordan' is not used in other triples.
@@ -318,9 +252,6 @@ Error: Instance type 'human' not valid for object 'Frederick Ayer' with property
 
 Triple: ['Beatrice Banning Ayer', 'father', 'Frederick Ayer']
 Error: Object 'Frederick Ayer' type 'human' does not satisfy the property 'father' value constraints: ['human whose existence is disputed', 'character that may or may not be fictional', 'mythical character', 'legendary figure', 'individual', 'person', 'fictional character', 'animal']
-
-Triple: ['Beatrice Banning Ayer', 'father', 'Frederick Ayer']
-Error: Invalid object type for Frederick Ayer
 
 Unused Declarations:
 Triple: ['Massachusetts', 'instance of', 'geographic entity']
@@ -343,9 +274,6 @@ Errors:
 Triple: ['Rena Sofer', 'spouse', 'Sanford Bookstaver']
 Error: Subject 'Rena Sofer' type 'actress' does not satisfy the property 'spouse' subject constraints: ['human whose existence is disputed', 'legendary figure', 'mythical character', 'processional giant', 'person', 'fictional character', 'human']
 
-Triple: ['Rena Sofer', 'spouse', 'Sanford Bookstaver']
-Error: Invalid subject type for Rena Sofer
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q128560,"The following triples for the subject 'Q128560' need attention:
 
@@ -361,18 +289,6 @@ Error: Subject 'The Power and the Glory' type 'book' does not satisfy the proper
 
 Triple: ['The Heart of the Matter', 'notable work', 'Graham Greene']
 Error: Subject 'The Heart of the Matter' type 'book' does not satisfy the property 'notable work' subject constraints: ['imaginary character', 'artificially intelligent entity', 'animal actor', 'company', 'group of humans', 'group of fictional characters', 'brand', 'pseudonym', 'art movement', 'fictional character', 'human']
-
-Triple: ['The Power and the Glory', 'notable work', 'Graham Greene']
-Error: Invalid subject type for The Power and the Glory
-
-Triple: ['The Power and the Glory', 'notable work', 'Graham Greene']
-Error: Invalid object type for Graham Greene
-
-Triple: ['The Heart of the Matter', 'notable work', 'Graham Greene']
-Error: Invalid subject type for The Heart of the Matter
-
-Triple: ['The Heart of the Matter', 'notable work', 'Graham Greene']
-Error: Invalid object type for Graham Greene
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q438684,"The following triples for the subject 'Q438684' need attention:
@@ -410,18 +326,6 @@ Error: Error: Property 'graduated in' not found in properties.
 
 Triple: ['Sandy Adams', 'graduated in', '2000']
 Error: Error: Property 'graduated in' not found in properties.
-
-Triple: ['Sandy Adams', 'graduated in', '2000']
-Error: Invalid subject type for Sandy Adams
-
-Triple: ['Sandy Adams', 'graduated in', '2000']
-Error: Invalid object type for 2000
-
-Triple: ['Sandy Adams', 'graduated in', '2000']
-Error: Invalid subject type for Sandy Adams
-
-Triple: ['Sandy Adams', 'graduated in', '2000']
-Error: Invalid object type for 2000
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q20857991,"The following triples for the subject 'Q20857991' need attention:
@@ -467,9 +371,6 @@ Error: Instance type 'year' not valid for object '2015' with property 'award rec
 Triple: ['Kyaw Thu', 'award received', '2015']
 Error: Object '2015' type 'year' does not satisfy the property 'award received' value constraints: ['position', 'title of honor', 'horse race', 'beauty contest', 'class of award', 'homage', 'order of chivalry', 'military decoration', 'science award', 'recognition', 'award ceremony', 'grade of an order', 'fictional award', 'competition', 'Roman triumph', 'hall of fame', 'award', 'title of authority', 'competition', 'literary award', 'order', 'coat of arms', 'medallion']
 
-Triple: ['Kyaw Thu', 'award received', '2015']
-Error: Invalid object type for 2015
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q11762615,"The following triples for the subject 'Q11762615' need attention:
 
@@ -493,9 +394,6 @@ Error: Object 'player-coach' not defined as an instance.
 Triple: ['Otago United', 'participant in', 'New Zealand Football Championship']
 Error: Object 'New Zealand Football Championship' type 'sport' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
 
-Triple: ['Otago United', 'participant in', 'New Zealand Football Championship']
-Error: Invalid object type for New Zealand Football Championship
-
 Unused Declarations:
 Triple: ['October 2005', 'instance of', 'date']
 Note: Subject 'October 2005' is not used in other triples.
@@ -509,9 +407,6 @@ Error: Object 'professional footballer' not defined as an instance.
 
 Triple: ['Watford', 'league', 'Championship']
 Error: Subject 'Watford' type 'sports team' does not satisfy the property 'league' subject constraints: ['sports award', 'sports transaction', 'sporting event', 'sports organization', 'competition', 'human']
-
-Triple: ['Watford', 'league', 'Championship']
-Error: Invalid subject type for Watford
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q7123502,"The following triples for the subject 'Q7123502' need attention:
@@ -549,24 +444,12 @@ Error: Object 'secretary' not defined as an instance.
 Triple: ['George Harrison', 'date of marriage', '2 September 1978']
 Error: Error: Property 'date of marriage' not found in properties.
 
-Triple: ['George Harrison', 'occupation', 'Dark Horse Records']
-Error: Invalid object type for Dark Horse Records
-
-Triple: ['George Harrison', 'date of marriage', '2 September 1978']
-Error: Invalid subject type for George Harrison
-
-Triple: ['George Harrison', 'date of marriage', '2 September 1978']
-Error: Invalid object type for 2 September 1978
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q967859,"The following triples for the subject 'Q967859' need attention:
 
 Errors:
 Triple: ['Juan Carlos Lorenzo', 'date of professional debut', '1940']
 Error: Error: Property 'date of professional debut' not found in properties.
-
-Triple: ['Juan Carlos Lorenzo', 'date of professional debut', '1940']
-Error: Invalid subject type for Juan Carlos Lorenzo
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q5220943,"The following triples for the subject 'Q5220943' need attention:
@@ -580,12 +463,6 @@ Error: Instance type 'date' not associated with any property for subject 'Septem
 
 Triple: ['Danny Williamson', 'end of playing career', 'September 2000']
 Error: Error: Property 'end of playing career' not found in properties.
-
-Triple: ['Danny Williamson', 'end of playing career', 'September 2000']
-Error: Invalid subject type for Danny Williamson
-
-Triple: ['Danny Williamson', 'end of playing career', 'September 2000']
-Error: Invalid object type for September 2000
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q6781673,"The following triples for the subject 'Q6781673' need attention:
@@ -603,9 +480,6 @@ Error: Instance type 'service' not associated with any property for subject 'car
 
 Triple: ['Guillen', 'launched', 'car2go']
 Error: Error: Property 'launched' not found in properties.
-
-Triple: ['Guillen', 'launched', 'car2go']
-Error: Invalid object type for car2go
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q3052249,"The following triples for the subject 'Q3052249' need attention:
@@ -645,18 +519,12 @@ Errors:
 Triple: ['Eva Bergman', 'father', 'Ingmar Bergman']
 Error: Object 'Ingmar Bergman' type 'human' does not satisfy the property 'father' value constraints: ['human whose existence is disputed', 'character that may or may not be fictional', 'mythical character', 'legendary figure', 'individual', 'person', 'fictional character', 'animal']
 
-Triple: ['Eva Bergman', 'father', 'Ingmar Bergman']
-Error: Invalid object type for Ingmar Bergman
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q554001,"The following triples for the subject 'Q554001' need attention:
 
 Errors:
 Triple: ['Roma', 'sport number', '3‚Äì0 victory against Chievo']
 Error: Subject 'Roma' type 'sports team' does not satisfy the property 'sport number' subject constraints: ['fictional human', 'rugby union position', 'motorcycle racing team', 'auto racing team', 'human']
-
-Triple: ['Roma', 'sport number', '3‚Äì0 victory against Chievo']
-Error: Invalid subject type for Roma
 
 Unused Declarations:
 Triple: ['Chievo', 'instance of', 'sports team']
@@ -678,9 +546,6 @@ Error: Relation 'location' not present in subject properties for 'Indian Hill Ce
 Triple: ['Middletown', 'part of', 'Connecticut']
 Error: Relation 'part of' not present in subject properties for 'Middletown'
 
-Triple: ['Indian Hill Cemetery', 'location', 'Middletown']
-Error: Invalid object type for Middletown
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q4766683,"The following triples for the subject 'Q4766683' need attention:
 
@@ -691,9 +556,6 @@ Error: Instance type 'honor society' not valid for object 'Phi Beta Kappa' with 
 Triple: ['Ann Stanford', 'member of', 'Phi Beta Kappa']
 Error: Object 'Phi Beta Kappa' type 'honor society' does not satisfy the property 'member of' value constraints: ['fictional criminal organization', 'commission', 'fraternal hall', 'group', 'group of humans', 'fictional organization', 'group of fictional characters', 'collective', 'church congregation', 'social movement', 'network', 'Christian ministry', 'voluntary association', ""employers' organization"", 'subculture', 'organization', 'advocacy group', 'synagogue']
 
-Triple: ['Ann Stanford', 'member of', 'Phi Beta Kappa']
-Error: Invalid object type for Phi Beta Kappa
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q531302,"The following triples for the subject 'Q531302' need attention:
 
@@ -703,9 +565,6 @@ Error: Instance type 'sports competition' not valid for object 'Serie A' with pr
 
 Triple: ['Francesco Acerbi', 'participant in', 'Serie A']
 Error: Object 'Serie A' type 'sports competition' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
-
-Triple: ['Francesco Acerbi', 'participant in', 'Serie A']
-Error: Invalid object type for Serie A
 
 Unused Declarations:
 Triple: ['2011', 'instance of', 'year']
@@ -799,15 +658,6 @@ Error: Instance type 'actor' not valid for subject 'Thomas Jane' with property '
 Triple: ['Rutger Hauer', 'instance of', 'actor']
 Error: Instance type 'actor' not valid for object 'Rutger Hauer' with property 'child'
 
-Triple: ['Thomas Jane', 'spouse', 'Aysha Hauer']
-Error: Invalid subject type for Thomas Jane
-
-Triple: ['Aysha Hauer', 'child', 'Rutger Hauer']
-Error: Invalid subject type for Aysha Hauer
-
-Triple: ['Aysha Hauer', 'child', 'Rutger Hauer']
-Error: Invalid object type for Rutger Hauer
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q234137,"The following triples for the subject 'Q234137' need attention:
 
@@ -833,12 +683,6 @@ Error: Object '60' not defined as an instance.
 
 Triple: ['Alfredo Di Stéfano', 'total goals in career', '14']
 Error: Object '14' not defined as an instance.
-
-Triple: ['Alfredo Di Stéfano', 'date of retirement', '1966']
-Error: Invalid subject type for Alfredo Di Stéfano
-
-Triple: ['Alfredo Di Stéfano', 'age at time of retirement', '40']
-Error: Invalid subject type for Alfredo Di Stéfano
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q18648967,"The following triples for the subject 'Q18648967' need attention:
@@ -868,12 +712,6 @@ Error: Instance type 'year' not associated with any property for subject '1982'
 
 Triple: ['Melinda Gates', 'graduated', '1982']
 Error: Error: Property 'graduated' not found in properties.
-
-Triple: ['Melinda Gates', 'graduated', '1982']
-Error: Invalid subject type for Melinda Gates
-
-Triple: ['Melinda Gates', 'graduated', '1982']
-Error: Invalid object type for 1982
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q131814,"The following triples for the subject 'Q131814' need attention:
@@ -933,15 +771,6 @@ Error: Error: Property 'separated in' not found in properties.
 Triple: ['Tina Turner & Ike Turner', 'divorced in', '1978']
 Error: Error: Property 'divorced in' not found in properties.
 
-Triple: ['Tina Turner & Ike Turner', 'married in', '1962']
-Error: Invalid object type for 1962
-
-Triple: ['Tina Turner & Ike Turner', 'separated in', '1976']
-Error: Invalid object type for 1976
-
-Triple: ['Tina Turner & Ike Turner', 'divorced in', '1978']
-Error: Invalid object type for 1978
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q2291334,"The following triples for the subject 'Q2291334' need attention:
 
@@ -967,12 +796,6 @@ Error: Object 'Croonian Lecture' type 'lecture' does not satisfy the property 'a
 
 Triple: ['George Oliver', 'member of', 'Royal College of Physicians']
 Error: Object 'Royal College of Physicians' type 'educational institution' does not satisfy the property 'member of' value constraints: ['fictional criminal organization', 'commission', 'fraternal hall', 'group', 'group of humans', 'fictional organization', 'group of fictional characters', 'collective', 'church congregation', 'social movement', 'network', 'Christian ministry', 'voluntary association', ""employers' organization"", 'subculture', 'organization', 'advocacy group', 'synagogue']
-
-Triple: ['George Oliver', 'award received', 'Croonian Lecture']
-Error: Invalid object type for Croonian Lecture
-
-Triple: ['George Oliver', 'member of', 'Royal College of Physicians']
-Error: Invalid object type for Royal College of Physicians
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q203215,"The following triples for the subject 'Q203215' need attention:
@@ -1010,15 +833,6 @@ Error: Object 'New York' not defined as an instance.
 Triple: ['Bachelor of Science degree', 'educated at', 'Columbia']
 Error: Subject 'Bachelor of Science degree' type 'academic degree' does not satisfy the property 'educated at' subject constraints: ['person', 'fictional character', 'class', 'human']
 
-Triple: ['School of Biology in California', 'place of birth', 'California']
-Error: Invalid subject type for School of Biology in California
-
-Triple: ['Columbia', 'place of birth', 'New York']
-Error: Invalid subject type for Columbia
-
-Triple: ['Bachelor of Science degree', 'educated at', 'Columbia']
-Error: Invalid subject type for Bachelor of Science degree
-
 Unused Declarations:
 Triple: ['1886', 'instance of', 'year']
 Note: Subject '1886' is not used in other triples.
@@ -1035,9 +849,6 @@ Error: Object 'CNRS research fellow' not defined as an instance.
 
 Triple: ['CNRS', 'employer', 'François Forget']
 Error: Subject 'CNRS' type 'research center' does not satisfy the property 'employer' subject constraints: ['group of humans', 'fictional human', 'fictional location', 'fictional character', 'human']
-
-Triple: ['CNRS', 'employer', 'François Forget']
-Error: Invalid subject type for CNRS
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q156814,"The following triples for the subject 'Q156814' need attention:
@@ -1058,9 +869,6 @@ Error: Object 'Admiral' not defined as an instance.
 Triple: ['Diana Gould', 'father', 'Admiral Sir Cecil Harcourt']
 Error: Object 'Admiral Sir Cecil Harcourt' type 'human' does not satisfy the property 'father' value constraints: ['human whose existence is disputed', 'character that may or may not be fictional', 'mythical character', 'legendary figure', 'individual', 'person', 'fictional character', 'animal']
 
-Triple: ['Diana Gould', 'father', 'Admiral Sir Cecil Harcourt']
-Error: Invalid object type for Admiral Sir Cecil Harcourt
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q10885,"The following triples for the subject 'Q10885' need attention:
 
@@ -1077,9 +885,6 @@ Error: Instance type 'year' not valid for object '1989' with property 'doctoral 
 
 Triple: ['Rosamond L. Naylor', 'doctoral student', '1989']
 Error: Object '1989' type 'year' does not satisfy the property 'doctoral student' value constraints: ['fictional human', 'human']
-
-Triple: ['Rosamond L. Naylor', 'doctoral student', '1989']
-Error: Invalid object type for 1989
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q359442,"The following triples for the subject 'Q359442' need attention:
@@ -1102,12 +907,6 @@ Error: Object 'Democratic Party nomination for president of the United States in
 
 Triple: ['Bernie Sanders', 'position held', 'Democratic Party nomination for president of the United States in 2020']
 Error: Object 'Democratic Party nomination for president of the United States in 2020' type 'political event' does not satisfy the property 'position held' value constraints: ['historical position', ""men's association football club"", ""men's association football team"", 'professorship', 'fictional office, position, or title', 'episcopal title', 'military position', 'East Asian government official', 'Council of state', 'artist-in-residence', 'title of authority', 'position', 'noble title', 'public office', 'administrative territorial entity', 'profession']
-
-Triple: ['Bernie Sanders', 'position held', 'Democratic Party nomination for president of the United States in 2016']
-Error: Invalid object type for Democratic Party nomination for president of the United States in 2016
-
-Triple: ['Bernie Sanders', 'position held', 'Democratic Party nomination for president of the United States in 2020']
-Error: Invalid object type for Democratic Party nomination for president of the United States in 2020
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q483118,"The following triples for the subject 'Q483118' need attention:
@@ -1172,15 +971,6 @@ Error: Error: Property 'manufacturer' not found in properties.
 Triple: ['the cars basic Fiat designed engines', 'participant in', 'performance improvement']
 Error: Object 'performance improvement' not defined as an instance.
 
-Triple: ['the cars', 'manufacturer', 'Fiat']
-Error: Invalid subject type for the cars
-
-Triple: ['the cars', 'manufacturer', 'Fiat']
-Error: Invalid object type for Fiat
-
-Triple: ['the cars basic Fiat designed engines', 'participant in', 'performance improvement']
-Error: Invalid subject type for the cars basic Fiat designed engines
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q4178758,"The following triples for the subject 'Q4178758' need attention:
 
@@ -1203,9 +993,6 @@ Error: Instance type 'academic discipline' not valid for object 'Political Scien
 
 Triple: ['Elizabeth Dole', 'occupation', 'Political Science']
 Error: Object 'Political Science' type 'academic discipline' does not satisfy the property 'occupation' value constraints: ['fictional analog of an occupation', 'Catholic vocation', 'Christian religious occupation', 'fictional religious occupation', 'fictional profession', 'occupation', 'position', 'job activity', 'title of authority', 'profession']
-
-Triple: ['Elizabeth Dole', 'occupation', 'Political Science']
-Error: Invalid object type for Political Science
 
 Unused Declarations:
 Triple: ['June 2, 1958', 'instance of', 'date']
@@ -1249,21 +1036,6 @@ Error: Subject 'Nazianzo' type 'geographic entity' does not satisfy the property
 Triple: ['9 December 1906', 'date of birth', 'Angelo Dolci']
 Error: Subject '9 December 1906' type 'date' does not satisfy the property 'date of birth' subject constraints: ['individual organism', 'hypothetical person', 'prosopographical phantom', 'fictional human formerly considered to be historical', 'captive mammal', 'stillborn child', 'clonal colony', 'fictional organism', 'human whose existence is disputed', 'Hominin fossil', 'legendary figure', 'fictional animal character', 'fictional character', 'house cat', 'horse', 'human', 'dog']
 
-Triple: ['Angelo Dolci', 'position held', 'titular archbishop']
-Error: Invalid object type for titular archbishop
-
-Triple: ['Angelo Dolci', 'occupation', 'titular archbishop']
-Error: Invalid object type for titular archbishop
-
-Triple: ['Nazianzo', 'place of birth', 'Angelo Dolci']
-Error: Invalid subject type for Nazianzo
-
-Triple: ['Nazianzo', 'place of birth', 'Angelo Dolci']
-Error: Invalid object type for Angelo Dolci
-
-Triple: ['9 December 1906', 'date of birth', 'Angelo Dolci']
-Error: Invalid subject type for 9 December 1906
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q61055308,"The following triples for the subject 'Q61055308' need attention:
 
@@ -1287,9 +1059,6 @@ Error: Instance type 'political territorial entity' not valid for object 'front 
 
 Triple: ['Harriet Harman', 'member of political party', 'front bench']
 Error: Object 'front bench' type 'political territorial entity' does not satisfy the property 'member of political party' value constraints: ['political organization', 'Ticket (election)', 'political coalition', 'political movement', 'political faction', 'political party']
-
-Triple: ['Harriet Harman', 'member of political party', 'front bench']
-Error: Invalid object type for front bench
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q445939,"The following triples for the subject 'Q445939' need attention:
@@ -1318,12 +1087,6 @@ Error: Instance type 'year' not associated with any property for subject '1990'
 Triple: ['William L. Jorgensen', 'year of employment', '1990']
 Error: Error: Property 'year of employment' not found in properties.
 
-Triple: ['William L. Jorgensen', 'year of employment', '1990']
-Error: Invalid subject type for William L. Jorgensen
-
-Triple: ['William L. Jorgensen', 'year of employment', '1990']
-Error: Invalid object type for 1990
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q1477082,"The following triples for the subject 'Q1477082' need attention:
 
@@ -1337,18 +1100,12 @@ Error: Subject 'Turksib' type 'short story volume' does not satisfy the property
 Triple: ['2007', 'point in time', 'Lutz Seiler received Ingeborg Bachmann Prize']
 Error: Relation 'point in time' not present in subject properties for '2007'
 
-Triple: ['Turksib', 'field of work', 'Lutz Seiler']
-Error: Invalid subject type for Turksib
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q6830106,"The following triples for the subject 'Q6830106' need attention:
 
 Errors:
 Triple: ['Rosalind Knight', 'spouse', 'Michael Elliott']
 Error: Subject 'Rosalind Knight' type 'actress' does not satisfy the property 'spouse' subject constraints: ['human whose existence is disputed', 'legendary figure', 'mythical character', 'processional giant', 'person', 'fictional character', 'human']
-
-Triple: ['Rosalind Knight', 'spouse', 'Michael Elliott']
-Error: Invalid subject type for Rosalind Knight
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q573399,"The following triples for the subject 'Q573399' need attention:
@@ -1362,12 +1119,6 @@ Error: Object 'i1' type 'human' does not satisfy the property 'occupation' value
 
 Triple: ['i3', 'described by source', 'i4']
 Error: Object 'i4' type 'human' does not satisfy the property 'described by source' value constraints: ['YouTube video', 'Holocaust train journey', 'group of works', 'list', 'scientific book', 'publisher', 'correspondence', 'version, edition or translation', 'GLAM', 'work', 'concept', 'organization', 'web page', 'biography', 'video recording', 'book']
-
-Triple: ['i2', 'occupation', 'i1']
-Error: Invalid object type for i1
-
-Triple: ['i3', 'described by source', 'i4']
-Error: Invalid object type for i4
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q6225275,"The following triples for the subject 'Q6225275' need attention:
@@ -1462,18 +1213,6 @@ Error: Object 'United States' not defined as an instance.
 Triple: ['Stanford University', 'country of citizenship', 'United States']
 Error: Object 'United States' not defined as an instance.
 
-Triple: ['Jennifer Connelly', 'educated at', 'Yale']
-Error: Invalid object type for Yale
-
-Triple: ['Jennifer Connelly', 'educated at', 'Stanford University']
-Error: Invalid object type for Stanford University
-
-Triple: ['Yale', 'country of citizenship', 'United States']
-Error: Invalid subject type for Yale
-
-Triple: ['Stanford University', 'country of citizenship', 'United States']
-Error: Invalid subject type for Stanford University
-
 Unused Declarations:
 Triple: ['1990', 'instance of', 'year']
 Note: Subject '1990' is not used in other triples.
@@ -1507,9 +1246,6 @@ Errors:
 Triple: ['Isamu Noguchi', 'spouse', 'Yoshiko Yamaguchi']
 Error: Subject 'Isamu Noguchi' type 'sculptor' does not satisfy the property 'spouse' subject constraints: ['human whose existence is disputed', 'legendary figure', 'mythical character', 'processional giant', 'person', 'fictional character', 'human']
 
-Triple: ['Isamu Noguchi', 'spouse', 'Yoshiko Yamaguchi']
-Error: Invalid subject type for Isamu Noguchi
-
 Unused Declarations:
 Triple: ['1951', 'instance of', 'year']
 Note: Subject '1951' is not used in other triples.
@@ -1532,21 +1268,6 @@ Error: Subject 'Roy Moore' type 'human' does not satisfy the property 'significa
 
 Triple: ['Roy Moore', 'significant event', 'January 15, 2001']
 Error: Subject 'Roy Moore' type 'human' does not satisfy the property 'significant event' subject constraints: ['entity']
-
-Triple: ['chief justice of the Supreme Court of Alabama', 'employer', 'Supreme Court of Alabama']
-Error: Invalid subject type for chief justice of the Supreme Court of Alabama
-
-Triple: ['Roy Moore', 'significant event', '2001']
-Error: Invalid subject type for Roy Moore
-
-Triple: ['Roy Moore', 'significant event', '2001']
-Error: Invalid object type for 2001
-
-Triple: ['Roy Moore', 'significant event', 'January 15, 2001']
-Error: Invalid subject type for Roy Moore
-
-Triple: ['Roy Moore', 'significant event', 'January 15, 2001']
-Error: Invalid object type for January 15, 2001
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q3299397,"The following triples for the subject 'Q3299397' need attention:
@@ -1574,12 +1295,6 @@ Error: Instance type 'political organization' not valid for object 'Duke of Port
 Triple: ['Robert Jenkinson, 2nd Earl of Liverpool', 'member of', ""Duke of Portland\\'s ministry""]
 Error: Object 'Duke of Portland\'s ministry' type 'political organization' does not satisfy the property 'member of' value constraints: ['fictional criminal organization', 'commission', 'fraternal hall', 'group', 'group of humans', 'fictional organization', 'group of fictional characters', 'collective', 'church congregation', 'social movement', 'network', 'Christian ministry', 'voluntary association', ""employers' organization"", 'subculture', 'organization', 'advocacy group', 'synagogue']
 
-Triple: ['Duke of Portland', 'position held', 'Duke of Portland']
-Error: Invalid object type for Duke of Portland
-
-Triple: ['Robert Jenkinson, 2nd Earl of Liverpool', 'member of', ""Duke of Portland\\'s ministry""]
-Error: Invalid object type for Duke of Portland\'s ministry
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q7298975,"The following triples for the subject 'Q7298975' need attention:
 
@@ -1590,21 +1305,12 @@ Error: Error: Property 'date of divorce' not found in properties.
 Triple: ['Raymond Lovell', 'date of marriage ', '1947']
 Error: Error: Property 'date of marriage ' not found in properties.
 
-Triple: ['Raymond Lovell', 'date of divorce', '1951']
-Error: Invalid subject type for Raymond Lovell
-
-Triple: ['Raymond Lovell', 'date of marriage ', '1947']
-Error: Invalid subject type for Raymond Lovell
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q983999,"The following triples for the subject 'Q983999' need attention:
 
 Errors:
 Triple: ['Daniel Giraud Elliot Medal', 'employer', 'National Academy of Sciences']
 Error: Subject 'Daniel Giraud Elliot Medal' type 'award' does not satisfy the property 'employer' subject constraints: ['group of humans', 'fictional human', 'fictional location', 'fictional character', 'human']
-
-Triple: ['Daniel Giraud Elliot Medal', 'employer', 'National Academy of Sciences']
-Error: Invalid subject type for Daniel Giraud Elliot Medal
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q200639,"The following triples for the subject 'Q200639' need attention:
@@ -1615,9 +1321,6 @@ Error: Instance type 'city' not valid for object 'Paris' with property 'place of
 
 Triple: ['Paul Valéry', 'place of death', 'Paris']
 Error: Object 'Paris' type 'city' does not satisfy the property 'place of death' value constraints: ['residential facility', 'at sea', 'geographic entity', 'facility', 'mythical location', 'medical facility', 'fictional location', 'geographic location', 'nursing home', 'geographical feature', 'seminary', 'battle', 'building', 'hospital', 'astronomical object', 'orbit']
-
-Triple: ['Paul Valéry', 'place of death', 'Paris']
-Error: Invalid object type for Paris
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q57531737,"The following triples for the subject 'Q57531737' need attention:
@@ -1698,15 +1401,6 @@ Error: Object 'Catholicism' not defined as an instance.
 Triple: ['Pope Urban VIII', 'consecrator', 'Mario Theodoli']
 Error: Subject 'Pope Urban VIII' type 'human' does not satisfy the property 'consecrator' subject constraints: ['person']
 
-Triple: ['Mario Theodoli', 'position held', 'cardinal']
-Error: Invalid object type for cardinal
-
-Triple: ['Mario Theodoli', 'position held', 'Cardinal-Priest']
-Error: Invalid object type for Cardinal-Priest
-
-Triple: ['Pope Urban VIII', 'consecrator', 'Mario Theodoli']
-Error: Invalid subject type for Pope Urban VIII
-
 Unused Declarations:
 Triple: ['1643', 'instance of', 'year']
 Note: Subject '1643' is not used in other triples.
@@ -1723,12 +1417,6 @@ Error: Object 'actress' not defined as an instance.
 
 Triple: ['Anouk Aimée', 'work', 'A Man and a Woman (1966)']
 Error: Error: Property 'work' not found in properties.
-
-Triple: ['Anouk Aimée', 'work', 'A Man and a Woman (1966)']
-Error: Invalid subject type for Anouk Aimée
-
-Triple: ['Anouk Aimée', 'work', 'A Man and a Woman (1966)']
-Error: Invalid object type for A Man and a Woman (1966)
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q468577,"The following triples for the subject 'Q468577' need attention:
@@ -1773,24 +1461,6 @@ Error: Error: Property 'located in' not found in properties.
 Triple: ['Anthony Cavalcante', 'graduated in', '1924']
 Error: Error: Property 'graduated in' not found in properties.
 
-Triple: ['law school of Dickinson College', 'is part of', 'Dickinson College']
-Error: Invalid subject type for law school of Dickinson College
-
-Triple: ['law school of Dickinson College', 'is part of', 'Dickinson College']
-Error: Invalid object type for Dickinson College
-
-Triple: ['law school of Dickinson College', 'located in', 'Carlisle, Pennsylvania']
-Error: Invalid subject type for law school of Dickinson College
-
-Triple: ['law school of Dickinson College', 'located in', 'Carlisle, Pennsylvania']
-Error: Invalid object type for Carlisle, Pennsylvania
-
-Triple: ['Anthony Cavalcante', 'graduated in', '1924']
-Error: Invalid subject type for Anthony Cavalcante
-
-Triple: ['Anthony Cavalcante', 'graduated in', '1924']
-Error: Invalid object type for 1924
-
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q3426409,"The following triples for the subject 'Q3426409' need attention:
 
@@ -1809,15 +1479,6 @@ Error: Object 'animation pioneer' not defined as an instance.
 
 Triple: ['Norman McLaren', 'employer', 'NFB']
 Error: Subject 'Norman McLaren' type 'person' does not satisfy the property 'employer' subject constraints: ['group of humans', 'fictional human', 'fictional location', 'fictional character', 'human']
-
-Triple: ['Ren√© Jodoin', 'employer', 'NFB']
-Error: Invalid subject type for Ren√© Jodoin
-
-Triple: ['Ren√© Jodoin', 'employer', 'French Animation Studio']
-Error: Invalid subject type for Ren√© Jodoin
-
-Triple: ['Norman McLaren', 'employer', 'NFB']
-Error: Invalid subject type for Norman McLaren
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q4457,"The following triples for the subject 'Q4457' need attention:
@@ -1859,15 +1520,6 @@ Error: Instance type 'BA' not valid for subject 'J. Fred Macdonald' with propert
 Triple: ['J. Fred Macdonald', 'instance of', 'MA']
 Error: Instance type 'MA' not valid for subject 'J. Fred Macdonald' with property 'occupation'
 
-Triple: ['J. Fred Macdonald', 'occupation', 'Assistant Professor']
-Error: Invalid subject type for J. Fred Macdonald
-
-Triple: ['J. Fred Macdonald', 'employer', 'Northeastern Illinois University']
-Error: Invalid subject type for J. Fred Macdonald
-
-Triple: ['J. Fred Macdonald', 'educated at', 'University of California at Berkeley']
-Error: Invalid subject type for J. Fred Macdonald
-
 Unused Declarations:
 Triple: ['History', 'instance of', 'academic discipline']
 Note: Subject 'History' is not used in other triples.
@@ -1904,9 +1556,6 @@ Q3751616,"The following triples for the subject 'Q3751616' need attention:
 Errors:
 Triple: ['Franco Superchi', 'year', '1965']
 Error: Error: Property 'year' not found in properties.
-
-Triple: ['Franco Superchi', 'year', '1965']
-Error: Invalid subject type for Franco Superchi
 
 Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
 Q7336490,"The following triples for the subject 'Q7336490' need attention:

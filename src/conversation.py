@@ -1,5 +1,3 @@
-# src/conversation.py
-
 import pandas as pd
 import json
 import re
@@ -7,7 +5,9 @@ import csv
 import ast
 from .utils import load_api_keys, set_openai_api_configurations, send_prompt
 
+# ---------- Triple Extraction Module ----------
 def extract_triples(text: str) -> list:
+    """Extracts triples from a given text using ast.literal_eval and regex as a fallback."""
     print("Raw text response:", text)
     try:
         parsed = ast.literal_eval(text)
@@ -27,29 +27,39 @@ def extract_triples(text: str) -> list:
 
     return []
 
+# ---------- Property Constraints Builder Module ----------
 def build_properties_constraints(subject_data, properties_data):
-    ids, labels = [item['property_id'] for item in subject_data if item['data_type'] != "Url"], [item['label'] for item in subject_data if item['data_type'] != "Url"]
+    """Builds a textual representation of property constraints based on subject data and property data."""
+    ids = [item['property_id'] for item in subject_data if item['data_type'] != "Url"]
+    labels = [item['label'] for item in subject_data if item['data_type'] != "Url"]
+    
     text = ""
     for n in range(len(ids)):
         prop_data = properties_data.get(ids[n], {"subject_type_constraints": ["None"], "value_type_constraints": ["None"]})
         subject_type_constraints = ', '.join(prop_data.get('subject_type_constraints', ['None']))
         value_type_constraints = ', '.join(prop_data.get('value_type_constraints', ['None']))
-        if subject_type_constraints == "" and value_type_constraints != "":
-            text += f"{labels[n]} (Value type: {value_type_constraints}), "
-        elif value_type_constraints == "" and subject_type_constraints != "":
+        
+        if subject_type_constraints and not value_type_constraints:
             text += f"{labels[n]} (Subject type: {subject_type_constraints}), "
-        elif subject_type_constraints == "" and value_type_constraints == "":
-            text += f"{labels[n]}, "
-        else:
+        elif value_type_constraints and not subject_type_constraints:
+            text += f"{labels[n]} (Value type: {value_type_constraints}), "
+        elif subject_type_constraints and value_type_constraints:
             text += f"{labels[n]} (Subject type: {subject_type_constraints}, Value type: {value_type_constraints}), "
+        else:
+            text += f"{labels[n]}, "
+    
     return text
 
+# ---------- Response Saving Module ----------
 def save_response(subject, triples, output_file):
+    """Saves the generated triples for a subject into a CSV file."""
     with open(output_file, 'a', newline='') as f:
         writer = csv.writer(f, quoting=csv.QUOTE_ALL)
         writer.writerow([subject, json.dumps(triples)])
 
+# ---------- Correction Prompt Generation Module ----------
 def generate_correction_prompt(base_prompt, subject, original_triples, errors):
+    """Generates a correction prompt including errors and original triples."""
     correction_prompt = f"""{base_prompt}
 
     The following triples for the subject '{subject}' need attention:
@@ -64,10 +74,13 @@ def generate_correction_prompt(base_prompt, subject, original_triples, errors):
     """
     return correction_prompt
 
+# ---------- Triple Generation Main Module ----------
 def generate_triples(subjects_file, properties_file, output_file, correction_file=None, sample_size=None):
+    """Generates triples for subjects using subject and property data, with optional corrections."""
     # Load JSON data for subjects and properties
     with open(properties_file) as f:
         properties_data = json.load(f)
+    
     with open(subjects_file) as f:
         subjects_data = json.load(f)
 
@@ -90,7 +103,7 @@ def generate_triples(subjects_file, properties_file, output_file, correction_fil
     for index, row in sample_subjects.iterrows():
         subject = row['subject']
         original_triples = extract_triples(row['triples']) if 'triples' in row else []
-        
+
         # Check if there are errors for this subject
         if correction_file:
             error_data = correction_prompts[correction_prompts['subject'] == subject]
@@ -132,6 +145,7 @@ def generate_triples(subjects_file, properties_file, output_file, correction_fil
 
             print(prompt)
 
+            # Call OpenAI API to generate or correct triples
             load_api_keys("config/api_keys.json")
             set_openai_api_configurations()
             response = send_prompt(prompt)
