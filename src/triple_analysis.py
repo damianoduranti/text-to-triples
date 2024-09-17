@@ -26,8 +26,8 @@ class DataLoader:
         """Load all relevant data (properties, responses, ground truth, subject properties)."""
         property_constraints = DataLoader.load_json('data/properties.json')
         properties = DataLoader.load_properties('data/properties.json')
-        responses = pd.read_csv('data/responses.csv')
-        ground_truth = DataLoader.load_ground_truth('data/ground_truth.csv')
+        responses = pd.read_csv('data/anon/responses.csv')
+        ground_truth = DataLoader.load_ground_truth('data/anon/ground_truth_anonymized.csv')
         subjects_data = DataLoader.load_json('data/subjects.json')['data']
         subject_properties_dict = {subj: set(prop['label'] for prop in props) 
                                    for subject_dict in subjects_data 

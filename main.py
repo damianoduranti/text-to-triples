@@ -2,10 +2,10 @@ import pandas as pd
 from src.triple_analysis import analyze_triples
 from src.conversation import generate_triples
 # from src.correction import apply_corrections
-from src.utils import load_api_keys, set_openai_api_configurations
+from src.utils import AzureOpenAIClient
 
 # ---------- Main Script for Triple Analysis and Correction ----------
-def main(cycles=3):
+def main(cycles=1):
     """
     Main function to run the triple generation, analysis, and correction over a specified number of cycles.
     
@@ -13,14 +13,10 @@ def main(cycles=3):
         cycles (int): Number of cycles to run the analysis. Defaults to 3.
     """
     # File paths
-    response_file = 'data/responses.csv'
-    ground_truth_file = 'data/ground_truth.csv'
+    response_file = 'data/anon/responses.csv'
+    ground_truth_file = 'data/anon/ground_truth_anonymized.csv'
     properties_file = 'data/properties.json'
     subjects_file = 'data/subjects.json'
-
-    # Load API keys and set configurations for the OpenAI API
-    load_api_keys("config/api_keys.json")
-    set_openai_api_configurations()
 
     # Initialize a list to store results for all cycles
     metrics_list = []
@@ -30,7 +26,7 @@ def main(cycles=3):
         print(f"Starting cycle {cycle + 1}")
 
         # Generate triples
-        # generate_triples(subjects_file, properties_file, output_file=response_file)
+        generate_triples(subjects_file, properties_file, output_file=response_file, ground_truth_file=ground_truth_file)
 
         # Analyze the generated triples
         results = analyze_triples(response_file, ground_truth_file, properties_file, subjects_file)
@@ -56,7 +52,7 @@ def main(cycles=3):
 
         # Save correction prompts for the current cycle
         correction_df = pd.DataFrame(results['correction_prompts'], columns=['subject', 'correction_prompt'])
-        correction_file = f'output/correction_prompts_cycle_{cycle + 1}.csv'
+        correction_file = f'output/anon/correction_prompts_cycle_{cycle + 1}.csv'
         correction_df.to_csv(correction_file, index=False)
         print(f"Correction prompts saved to '{correction_file}'")
 
@@ -65,7 +61,7 @@ def main(cycles=3):
 
     # Save the collected metrics for all cycles
     metrics_df = pd.DataFrame(metrics_list)
-    metrics_file = 'output/metrics_summary.csv'
+    metrics_file = 'output/anon/metrics_summary.csv'
     metrics_df.to_csv(metrics_file, index=False)
     print(f"Metrics for all cycles saved to '{metrics_file}'")
 
