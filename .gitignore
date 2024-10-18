@@ -58,3 +58,4 @@ var/
 .mypy_cache/
 
 .env
+.conflicts

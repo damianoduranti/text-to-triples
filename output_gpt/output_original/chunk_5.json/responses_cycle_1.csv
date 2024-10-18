@@ -1,0 +1,3 @@
+subject,triples,cycle
+Q116067,"[[""Philipp Degen"", ""instance of"", ""human""], [""Liverpool"", ""instance of"", ""sports team""], [""bosman free transfer"", ""instance of"", ""sports transaction""], [""Philipp Degen"", ""occupation"", ""football player""], [""Philipp Degen"", ""member of sports team"", ""Liverpool""], [""Philipp Degen"", ""participant in"", ""bosman free transfer""]]",1
+Q1160825,"[[""Oumar Dieng"", ""instance of"", ""human""], [""Oumar Dieng"", ""member of sports team"", ""Lille""], [""Oumar Dieng"", ""participant in"", ""Ligue 1""], [""1989"", ""instance of"", ""year""], [""Oumar Dieng"", ""occupation"", ""professional footballer""]]",1

@@ -1,0 +1,861 @@
+subject,correction_prompt
+Q10510,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Brazilian Grand Prix', 'instance of', 'sports competition']
+Error: Instance type 'sports competition' not valid for object 'Brazilian Grand Prix' with property 'participant in'
+
+Triple: ['2018‚Äì19 FIA World Endurance Championship', 'instance of', 'recurring sporting event']
+Error: Instance type 'recurring sporting event' not valid for object '2018‚Äì19 FIA World Endurance Championship' with property 'participant in'
+
+Triple: ['2018 24 Hours of Le Mans', 'instance of', 'sports competition']
+Error: Instance type 'sports competition' not valid for object '2018 24 Hours of Le Mans' with property 'participant in'
+
+Triple: ['Jenson Button', 'occupation', 'Formula One racing driver']
+Error: Object 'Formula One racing driver' not defined as an instance.
+
+Triple: ['Jenson Button', 'award received', ""2009 World Drivers' Championship""]
+Error: Object '2009 World Drivers' Championship' not defined as an instance.
+
+Triple: ['Jenson Button', 'participant in', 'Brazilian Grand Prix']
+Error: Object 'Brazilian Grand Prix' type 'sports competition' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Jenson Button', 'participant in', '2018‚Äì19 FIA World Endurance Championship']
+Error: Object '2018‚Äì19 FIA World Endurance Championship' type 'recurring sporting event' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Jenson Button', 'participant in', '2018 24 Hours of Le Mans']
+Error: Object '2018 24 Hours of Le Mans' type 'sports competition' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Brawn GP', 'award received', ""2009 World Constructors' Championship""]
+Error: Object '2009 World Constructors' Championship' not defined as an instance.
+
+Triple: ['Jenson Button', 'country of citizenship', 'United Kingdom']
+Error: Object 'United Kingdom' not defined as an instance.
+
+Triple: ['Lewis Hamilton', 'country of citizenship', 'United Kingdom']
+Error: Object 'United Kingdom' not defined as an instance.
+
+Triple: ['Jenson Button', 'number of wins in 2009 season', '6']
+Error: Error: Property 'number of wins in 2009 season' not found in properties.
+
+Triple: ['Jenson Button', 'victory', '2009 Brazilian Grand Prix']
+Error: Object '2009 Brazilian Grand Prix' not defined as an instance.
+
+Triple: ['Jenson Button', 'number of matches played/races/starts in 2009 season', '7']
+Error: Error: Property 'number of matches played/races/starts in 2009 season' not found in properties.
+
+Triple: ['Lewis Hamilton', 'occupation', 'Formula One racing driver']
+Error: Object 'Formula One racing driver' not defined as an instance.
+
+Triple: ['Jenson Button', 'sport', 'Formula One']
+Error: Object 'Formula One' not defined as an instance.
+
+Triple: ['Lewis Hamilton', 'sport', 'Formula One']
+Error: Object 'Formula One' not defined as an instance.
+
+Unused Declarations:
+Triple: ['LMP1', 'instance of', 'sports league']
+Note: Subject 'LMP1' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10510315,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Southern League', 'instance of', 'sports league']
+Note: Subject 'Southern League' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10513481,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['County Durham', 'instance of', 'geographic location']
+Note: Subject 'County Durham' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10516779,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['2009', 'instance of', 'year']
+Note: Subject '2009' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1051929,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Eva Rutkowskaya', 'instance of', 'human']
+Note: Subject 'Eva Rutkowskaya' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q105343,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Fischer Black Prize', 'affiliation', 'American Finance Association']
+Error: Subject 'Fischer Black Prize' type 'award' does not satisfy the property 'affiliation' subject constraints: ['fictional group of characters', 'fictional species', 'group of humans', 'fictional astronomical object', 'fictional organization', 'facility', 'serial', 'fictional character', 'organization', 'database', 'human']
+
+Triple: ['Ulrike Malmendier', 'occupation', 'finance researcher']
+Error: Object 'finance researcher' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10541213,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Julia Pritchard', 'place of birth', 'London']
+Error: Object 'London' not defined as an instance.
+
+Triple: ['Julia Morley', 'occupation', 'model']
+Error: Object 'model' not defined as an instance.
+
+Triple: ['Eric Morley', 'occupation', 'director']
+Error: Object 'director' not defined as an instance.
+
+Triple: ['Eric Morley', 'occupation', 'Director of Mecca Dancing']
+Error: Object 'Director of Mecca Dancing' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Mecca Dancing', 'instance of', 'group of humans']
+Note: Subject 'Mecca Dancing' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10543,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Graham Taylor', 'instance of', 'human']
+Note: Subject 'Graham Taylor' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10550027,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Max Reinthaler', 'occupation', 'soccer player']
+Error: Object 'soccer player' not defined as an instance.
+
+Triple: ['Max Reinthaler', 'sport', 'soccer']
+Error: Object 'soccer' not defined as an instance.
+
+Triple: ['Max Reinthaler', 'position played on team / speciality', 'debut player']
+Error: Object 'debut player' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Europa League', 'instance of', 'sports competition']
+Note: Subject 'Europa League' is not used in other triples.
+
+Triple: ['Liverpool', 'instance of', 'sports team']
+Note: Subject 'Liverpool' is not used in other triples.
+
+Triple: ['6 December 2012', 'instance of', 'date']
+Note: Subject '6 December 2012' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1055367,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Torino F.', 'instance of', 'geographic location']
+Error: Instance type 'geographic location' not associated with any property for subject 'Torino F.'
+
+Triple: ['Roger Grava', 'given name', 'Roger']
+Error: Object 'Roger' not defined as an instance.
+
+Triple: ['Roger Grava', 'moved to', 'Torino F.']
+Error: Error: Property 'moved to' not found in properties.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10553869,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Sydney FC', 'instance of', 'sports team']
+Note: Subject 'Sydney FC' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1055449,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Matteo Salvini', 'position held', 'Member of the European Parliament']
+Error: Object 'Member of the European Parliament' not defined as an instance.
+
+Unused Declarations:
+Triple: ['European Parliament', 'instance of', 'organization']
+Note: Subject 'European Parliament' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10557160,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Fred Halliday', 'occupation', 'sports team manager']
+Error: Object 'sports team manager' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1055767,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Franco Ossola', 'work period (start)', '4 February 1940']
+Error: Object '4 February 1940' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Torino', 'instance of', 'geographic location']
+Note: Subject 'Torino' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1055773,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Mario Rigamonti', 'occupation', 'football player']
+Error: Object 'football player' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1055780,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Juventus', 'instance of', 'sports team']
+Note: Subject 'Juventus' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10558029,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['North American Soccer League', 'instance of', 'sports governing body']
+Note: Subject 'North American Soccer League' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10561955,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['János Pach', 'occupation', 'mathematician']
+Error: Object 'mathematician' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10577,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['World Cup qualifier', 'instance of', 'sporting event']
+Error: Instance type 'sporting event' not valid for object 'World Cup qualifier' with property 'participant in'
+
+Triple: ['Euro 2012 qualifying matches', 'instance of', 'sporting event']
+Error: Instance type 'sporting event' not valid for object 'Euro 2012 qualifying matches' with property 'participant in'
+
+Triple: ['2012 Summer Olympics', 'instance of', 'sporting event']
+Error: Instance type 'sporting event' not valid for object '2012 Summer Olympics' with property 'participant in'
+
+Triple: ['Tom Cleverley', 'participant in', 'World Cup qualifier']
+Error: Object 'World Cup qualifier' type 'sporting event' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Tom Cleverley', 'participant in', 'Euro 2012 qualifying matches']
+Error: Object 'Euro 2012 qualifying matches' type 'sporting event' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Tom Cleverley', 'participant in', '2012 Summer Olympics']
+Error: Object '2012 Summer Olympics' type 'sporting event' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Unused Declarations:
+Triple: ['San Marino', 'instance of', 'sports team']
+Note: Subject 'San Marino' is not used in other triples.
+
+Triple: ['Liverpool', 'instance of', 'sports team']
+Note: Subject 'Liverpool' is not used in other triples.
+
+Triple: ['Sunderland', 'instance of', 'sports team']
+Note: Subject 'Sunderland' is not used in other triples.
+
+Triple: ['Nottingham Forest', 'instance of', 'sports team']
+Note: Subject 'Nottingham Forest' is not used in other triples.
+
+Triple: ['Bulgaria', 'instance of', 'sports team']
+Note: Subject 'Bulgaria' is not used in other triples.
+
+Triple: ['Wales', 'instance of', 'sports team']
+Note: Subject 'Wales' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1057736,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Brookline High School Warriors', 'instance of', 'group of humans']
+Error: Instance type 'group of humans' not valid for object 'Brookline High School Warriors' with property 'member of sports team'
+
+Triple: ['Theo Epstein', 'member of sports team', 'Brookline High School Warriors']
+Error: Object 'Brookline High School Warriors' type 'group of humans' does not satisfy the property 'member of sports team' value constraints: ['professional wrestling stable', 'department of a sports club', 'fictional sports club', 'fictional sports team', 'sports team', 'tag team', 'clan', 'sports club']
+
+Triple: ['Theo Epstein', 'occupation', 'baseball for the Brookline High School Warriors']
+Error: Object 'baseball for the Brookline High School Warriors' not defined as an instance.
+
+Triple: ['Theo Epstein', 'occupation', 'working for the Red Sox']
+Error: Object 'working for the Red Sox' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Red Sox', 'instance of', 'group of humans']
+Note: Subject 'Red Sox' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1058,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Master of Arts degree', 'instance of', 'Academic degree']
+Error: Instance type 'Academic degree' not valid for object 'Master of Arts degree' with property 'award received'
+
+Triple: ['Narendra Modi', 'award received', 'Master of Arts degree']
+Error: Object 'Master of Arts degree' type 'Academic degree' does not satisfy the property 'award received' value constraints: ['position', 'title of honor', 'horse race', 'beauty contest', 'class of award', 'homage', 'order of chivalry', 'military decoration', 'science award', 'recognition', 'award ceremony', 'grade of an order', 'fictional award', 'competition', 'Roman triumph', 'hall of fame', 'award', 'title of authority', 'competition', 'literary award', 'order', 'coat of arms', 'medallion']
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10585,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Professional Football', 'instance of', 'sport']
+Error: Instance type 'sport' not valid for object 'Professional Football' with property 'participant in'
+
+Triple: ['Professional career of Ben Foster', 'instance of', 'activity']
+Error: Instance type 'activity' not valid for subject 'Professional career of Ben Foster' with property 'participant in'
+
+Triple: ['Professional career of Ben Foster', 'participant in', 'Professional Football']
+Error: Subject 'Professional career of Ben Foster' type 'activity' does not satisfy the property 'participant in' subject constraints: ['group of humans', 'group of fictional characters', 'nation at competition', 'individual animal', 'creative work', 'sports team', 'vessel', 'humanoid robot', 'person', 'fictional character', 'software', 'computer', 'human']
+
+Triple: ['Professional career of Ben Foster', 'work period (start)', '2001']
+Error: Object '2001' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10588,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Europa League', 'instance of', 'sports organization']
+Note: Subject 'Europa League' is not used in other triples.
+
+Triple: ['League One', 'instance of', 'sports organization']
+Note: Subject 'League One' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10592,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Marcus Gayle', 'given name', 'Marcus']
+Error: Object 'Marcus' not defined as an instance.
+
+Triple: ['Marcus Gayle', 'family name', 'Gayle']
+Error: Object 'Gayle' not defined as an instance.
+
+Triple: ['Marcus Gayle', 'place of birth', 'Hammersmith']
+Error: Object 'Hammersmith' type 'city' does not satisfy the property 'place of birth' value constraints: ['location', 'geographic entity', 'fictional vessel', 'vessel', 'fictional location', 'mythical location', 'geographic location', 'architectural structure', 'ship', 'astronomical object']
+
+Triple: ['Hammersmith', 'instance of', 'city']
+Error: Instance type 'city' not valid for object 'Hammersmith' with property 'place of birth'
+
+Triple: ['Marcus Gayle', 'work period (start)', '1988']
+Error: Object '1988' not defined as an instance.
+
+Triple: ['Marcus Gayle', 'work period (end)', '2006']
+Error: Object '2006' not defined as an instance.
+
+Triple: ['Brentford', 'instance of', 'Football team']
+Error: Instance type 'Football team' not valid for object 'Brentford' with property 'member of sports team'
+
+Triple: ['Marcus Gayle', 'member of sports team', 'Brentford']
+Error: Object 'Brentford' type 'Football team' does not satisfy the property 'member of sports team' value constraints: ['professional wrestling stable', 'department of a sports club', 'fictional sports club', 'fictional sports team', 'sports team', 'tag team', 'clan', 'sports club']
+
+Triple: ['AFC Wimbledon', 'instance of', 'Football team']
+Error: Instance type 'Football team' not valid for object 'AFC Wimbledon' with property 'member of sports team'
+
+Triple: ['Marcus Gayle', 'member of sports team', 'AFC Wimbledon']
+Error: Object 'AFC Wimbledon' type 'Football team' does not satisfy the property 'member of sports team' value constraints: ['professional wrestling stable', 'department of a sports club', 'fictional sports club', 'fictional sports team', 'sports team', 'tag team', 'clan', 'sports club']
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q105937,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Virus Laboratory', 'instance of', 'facility']
+Note: Subject 'Virus Laboratory' is not used in other triples.
+
+Triple: ['Department of Biochemistry building', 'instance of', 'facility']
+Note: Subject 'Department of Biochemistry building' is not used in other triples.
+
+Triple: ['Stanley Hall', 'instance of', 'facility']
+Note: Subject 'Stanley Hall' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10594,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Alec Chamberlain', 'occupation', 'player']
+Error: Object 'player' not defined as an instance.
+
+Triple: ['Alec Chamberlain', 'league appearances', '788']
+Error: Error: Property 'league appearances' not found in properties.
+
+Triple: ['Alec Chamberlain', 'league appearances', '90']
+Error: Error: Property 'league appearances' not found in properties.
+
+Triple: ['Alec Chamberlain', 'work period (start)', '1982']
+Error: Object '1982' not defined as an instance.
+
+Triple: ['Alec Chamberlain', 'work period (end)', '2007']
+Error: Object '2007' not defined as an instance.
+
+Triple: ['Alec Chamberlain', 'given name', 'Alec']
+Error: Object 'Alec' not defined as an instance.
+
+Triple: ['Alec Chamberlain', 'family name', 'Chamberlain']
+Error: Object 'Chamberlain' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Premier League', 'instance of', 'sports organization']
+Note: Subject 'Premier League' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10598,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['David James', 'member of sports team', 'Liverpool FC']
+Error: Object 'Liverpool FC' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Liverpool F.C.', 'instance of', 'sports team']
+Note: Subject 'Liverpool F.C.' is not used in other triples.
+
+Triple: ['Premier League', 'instance of', 'sports league']
+Note: Subject 'Premier League' is not used in other triples.
+
+Triple: ['English Football League Championship', 'instance of', 'sports league']
+Note: Subject 'English Football League Championship' is not used in other triples.
+
+Triple: ['Indian Super League', 'instance of', 'sports league']
+Note: Subject 'Indian Super League' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10601,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Watford F.C.', 'country for sport', 'United Kingdom']
+Error: Object 'United Kingdom' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10603,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Sheffield United', 'instance of', 'sports team']
+Note: Subject 'Sheffield United' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1060433,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['professional wrestling', 'instance of', 'sport']
+Error: Instance type 'sport' not valid for object 'professional wrestling' with property 'occupation'
+
+Triple: ['Koji Kanemoto', 'occupation', 'professional wrestling']
+Error: Object 'professional wrestling' type 'sport' does not satisfy the property 'occupation' value constraints: ['fictional analog of an occupation', 'Catholic vocation', 'Christian religious occupation', 'fictional religious occupation', 'fictional profession', 'occupation', 'position', 'job activity', 'title of authority', 'profession']
+
+Triple: ['Hikaru', 'occupation', 'professional wrestling']
+Error: Object 'professional wrestling' type 'sport' does not satisfy the property 'occupation' value constraints: ['fictional analog of an occupation', 'Catholic vocation', 'Christian religious occupation', 'fictional religious occupation', 'fictional profession', 'occupation', 'position', 'job activity', 'title of authority', 'profession']
+
+Unused Declarations:
+Triple: ['Zero-1', 'instance of', 'organization']
+Note: Subject 'Zero-1' is not used in other triples.
+
+Triple: ['Zero-1 show on January 2, 2009', 'instance of', 'event']
+Note: Subject 'Zero-1 show on January 2, 2009' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10606,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Pierre Issa', 'instance of', 'human']
+Note: Subject 'Pierre Issa' is not used in other triples.
+
+Triple: ['Birmingham City', 'instance of', 'sports team']
+Note: Subject 'Birmingham City' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1060636,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['1992', 'instance of', 'year']
+Note: Subject '1992' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1061825,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['2006–07 season', 'instance of', 'sporting event']
+Error: Instance type 'sporting event' not valid for object '2006–07 season' with property 'participant in'
+
+Triple: ['Sabres', 'participant in', '2006–07 season']
+Error: Object '2006–07 season' type 'sporting event' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Lindy Ruff', 'participant in', '2006–07 season']
+Error: Object '2006–07 season' type 'sporting event' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Unused Declarations:
+Triple: ['NHL', 'instance of', 'sports organization']
+Note: Subject 'NHL' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q106275,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Chocolat (2000)', 'instance of', 'work of science']
+Note: Subject 'Chocolat (2000)' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1063677,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['1974', 'instance of', 'year']
+Note: Subject '1974' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1063846,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Charles Burnett', 'award received', 'MacArthur Fellowship']
+Error: Object 'MacArthur Fellowship' not defined as an instance.
+
+Triple: ['Charles Burnett', 'occupation', 'independent filmmaker']
+Error: Object 'independent filmmaker' not defined as an instance.
+
+Triple: ['Charles Burnett', 'place of birth', 'Vicksburg, Mississippi']
+Error: Object 'Vicksburg, Mississippi' not defined as an instance.
+
+Triple: ['Charles Burnett', 'date of birth', 'April 13, 1944']
+Error: Object 'April 13, 1944' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q106399,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Crystalline Enzymes: The Chemistry of Pepsin, Trypsin, and Bacteriophage', 'instance of', 'book']
+Note: Subject 'Crystalline Enzymes: The Chemistry of Pepsin, Trypsin, and Bacteriophage' is not used in other triples.
+
+Triple: ['National Academy of Sciences', 'instance of', 'organization']
+Note: Subject 'National Academy of Sciences' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1064228,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Charles Edward Potter', 'country of citizenship', 'United States']
+Error: Object 'United States' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10648,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['North Queensferry', 'instance of', 'location']
+Error: Instance type 'location' not valid for object 'North Queensferry' with property 'residence'
+
+Triple: ['Gordon Brown', 'residence', 'North Queensferry']
+Error: Object 'North Queensferry' type 'location' does not satisfy the property 'residence' value constraints: ['building', 'nursing home', 'residence', 'fictional location', 'geographic location', 'architectural ensemble', 'geographic region', 'mythical location', 'house']
+
+Unused Declarations:
+Triple: ['Fife', 'instance of', 'location']
+Note: Subject 'Fife' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1064881,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['55 Broadway', 'instance of', 'architectural structure']
+Note: Subject '55 Broadway' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q106508,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Gérard Depardieu', 'position held', 'cultural ambassador of Montenegro']
+Error: Object 'cultural ambassador of Montenegro' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Montenegro', 'instance of', 'sovereign state']
+Note: Subject 'Montenegro' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1065219,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Charles L. Bennett', 'occupation', 'Professor']
+Error: Object 'Professor' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q106529,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Comme au cin√©ma', 'instance of', 'song']
+Note: Subject 'Comme au cin√©ma' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1065319,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Bernardo Corradi', 'occupation', 'professional football player']
+Error: Object 'professional football player' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1065352,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Elizabeth Rigby', 'occupation', 'Art Historian']
+Error: Object 'Art Historian' not defined as an instance.
+
+Triple: ['Elizabeth Rigby', 'occupation', 'Translator']
+Error: Object 'Translator' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q106548,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Maybrit Illner', 'occupation', 'television presenter']
+Error: Object 'television presenter' not defined as an instance.
+
+Triple: ['Ren\\u221a\\u00a9 Obermann', 'occupation', 'chief executive officer']
+Error: Object 'chief executive officer' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1065884,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Claude-Emmanuel de Pastoret', 'instance of', 'human']
+Error: Instance type 'human' not valid for object 'Claude-Emmanuel de Pastoret' with property 'described by source'
+
+Triple: ['Le Ren√©gat de Tanger', 'described by source', 'Claude-Emmanuel de Pastoret']
+Error: Object 'Claude-Emmanuel de Pastoret' type 'human' does not satisfy the property 'described by source' value constraints: ['YouTube video', 'Holocaust train journey', 'group of works', 'list', 'scientific book', 'publisher', 'correspondence', 'version, edition or translation', 'GLAM', 'work', 'concept', 'organization', 'web page', 'biography', 'video recording', 'book']
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1066032,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Archbishop Paul Cremona', 'occupation', 'Archbishop']
+Error: Object 'Archbishop' not defined as an instance.
+
+Triple: ['Charles J. Scicluna', 'position held', 'bishop']
+Error: Object 'bishop' not defined as an instance.
+
+Triple: ['Charles J. Scicluna', 'consecrator', 'Archbishop Paul Cremona']
+Error: Subject 'Charles J. Scicluna' type 'human' does not satisfy the property 'consecrator' subject constraints: ['person']
+
+Triple: ['Charles J. Scicluna', 'date of consecration', '24 November 2012']
+Error: Error: Property 'date of consecration' not found in properties.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1066501,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Charles Woodson', 'given name', 'Charles']
+Error: Object 'Charles' not defined as an instance.
+
+Triple: ['Charles Woodson', 'family name', 'Woodson']
+Error: Object 'Woodson' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Pro Bowl', 'instance of', 'sports competition']
+Note: Subject 'Pro Bowl' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10666,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Stockport County', 'instance of', 'sports team']
+Note: Subject 'Stockport County' is not used in other triples.
+
+Triple: ['Lincoln City', 'instance of', 'sports team']
+Note: Subject 'Lincoln City' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10667,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['loan deal', 'instance of', 'contract']
+Note: Subject 'loan deal' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1066776,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Olympic Games of the 154th Olympiad in 164 BCE', 'instance of', 'competition']
+Note: Subject 'Olympic Games of the 154th Olympiad in 164 BCE' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1066958,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Australian A-League', 'instance of', 'sports organization']
+Note: Subject 'Australian A-League' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1067999,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Bachelor of Arts degree in Economics', 'instance of', 'educational degree']
+Error: Instance type 'educational degree' not valid for object 'Bachelor of Arts degree in Economics' with property 'award received'
+
+Triple: ['Masters of Arts degree in Economics', 'instance of', 'educational degree']
+Error: Instance type 'educational degree' not valid for object 'Masters of Arts degree in Economics' with property 'award received'
+
+Triple: ['Chase G. Woodhouse', 'award received', 'Bachelor of Arts degree in Economics']
+Error: Object 'Bachelor of Arts degree in Economics' type 'educational degree' does not satisfy the property 'award received' value constraints: ['position', 'title of honor', 'horse race', 'beauty contest', 'class of award', 'homage', 'order of chivalry', 'military decoration', 'science award', 'recognition', 'award ceremony', 'grade of an order', 'fictional award', 'competition', 'Roman triumph', 'hall of fame', 'award', 'title of authority', 'competition', 'literary award', 'order', 'coat of arms', 'medallion']
+
+Triple: ['Chase G. Woodhouse', 'award received', 'Masters of Arts degree in Economics']
+Error: Object 'Masters of Arts degree in Economics' type 'educational degree' does not satisfy the property 'award received' value constraints: ['position', 'title of honor', 'horse race', 'beauty contest', 'class of award', 'homage', 'order of chivalry', 'military decoration', 'science award', 'recognition', 'award ceremony', 'grade of an order', 'fictional award', 'competition', 'Roman triumph', 'hall of fame', 'award', 'title of authority', 'competition', 'literary award', 'order', 'coat of arms', 'medallion']
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1069456,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Ivano Bonetti', 'country of citizenship', 'Italy']
+Error: Object 'Italy' not defined as an instance.
+
+Triple: ['Ivano Bonetti', 'family name', 'Bonetti']
+Error: Object 'Bonetti' not defined as an instance.
+
+Triple: ['Ivano Bonetti', 'given name', 'Ivano']
+Error: Object 'Ivano' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q106986,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Abitur', 'instance of', 'educational achievement']
+Error: Instance type 'educational achievement' not valid for object 'Abitur' with property 'participant in'
+
+Triple: ['Leo Hepp', 'participant in', 'Abitur']
+Error: Object 'Abitur' type 'educational achievement' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Signal Detachment 5', 'instance of', 'military unit']
+Error: Instance type 'military unit' not valid for object 'Signal Detachment 5' with property 'position held'
+
+Triple: ['Leo Hepp', 'position held', 'Signal Detachment 5']
+Error: Object 'Signal Detachment 5' type 'military unit' does not satisfy the property 'position held' value constraints: ['historical position', ""men's association football club"", ""men's association football team"", 'professorship', 'fictional office, position, or title', 'episcopal title', 'military position', 'East Asian government official', 'Council of state', 'artist-in-residence', 'title of authority', 'position', 'noble title', 'public office', 'administrative territorial entity', 'profession']
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q107051,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Andrea Barzagli', 'occupation', 'athlete']
+Error: Object 'athlete' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1070533,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Institute of Combinatorics and its Applications', 'instance of', 'organization']
+Note: Subject 'Institute of Combinatorics and its Applications' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10709,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Fernando Forestieri', 'work period (start)', '8 November 2006']
+Error: Object '8 November 2006' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Empoli', 'instance of', 'sports team']
+Note: Subject 'Empoli' is not used in other triples.
+
+Triple: ['Internazionale', 'instance of', 'sports team']
+Note: Subject 'Internazionale' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q1071060,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Portugal', 'instance of', 'sovereign state']
+Note: Subject 'Portugal' is not used in other triples.
+
+Triple: ['Fernando Gomes', 'instance of', 'human']
+Note: Subject 'Fernando Gomes' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10715,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Derby County', 'instance of', 'sports team']
+Note: Subject 'Derby County' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q107150,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Westf√§lische Wilhelms-Universit√§t', 'instance of', 'educational institution']
+Note: Subject 'Westf√§lische Wilhelms-Universit√§t' is not used in other triples.
+
+Triple: ['2002', 'instance of', 'year']
+Note: Subject '2002' is not used in other triples.
+
+Triple: ['Westphalia', 'instance of', 'geographic location']
+Note: Subject 'Westphalia' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10718,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Sean Dyche', 'coach of sports team', 'Derby County']
+Error: Object 'Derby County' type 'sports team' does not satisfy the property 'coach of sports team' value constraints: ['fictional sports club', 'sports organization']
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10726,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Chris Iwelumo', 'sport', 'football']
+Error: Object 'football' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Conference Premier', 'instance of', 'sports organization']
+Note: Subject 'Conference Premier' is not used in other triples.
+
+Triple: ['Championship', 'instance of', 'sports league']
+Note: Subject 'Championship' is not used in other triples.
+
+Triple: ['Football League Trophy Final', 'instance of', 'sporting event']
+Note: Subject 'Football League Trophy Final' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10727,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Dinamo Tbilisi', 'instance of', 'sports team']
+Note: Subject 'Dinamo Tbilisi' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10732,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['2013', 'instance of', 'year']
+Note: Subject '2013' is not used in other triples.
+
+Triple: ['Charlton Athletic', 'instance of', 'sports team']
+Note: Subject 'Charlton Athletic' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10733,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Prince Buaben', 'sport', 'footballer']
+Error: Object 'footballer' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10735,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Udinese', 'league', 'Serie A']
+Error: Subject 'Udinese' type 'sports team' does not satisfy the property 'league' subject constraints: ['sports award', 'sports transaction', 'sporting event', 'sports organization', 'competition', 'human']
+
+Triple: ['West Brom', 'league', 'Premier League']
+Error: Subject 'West Brom' type 'sports team' does not satisfy the property 'league' subject constraints: ['sports award', 'sports transaction', 'sporting event', 'sports organization', 'competition', 'human']
+
+Triple: ['Mat\\u011bj Vydra', 'sport', 'football']
+Error: Object 'football' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Hull City', 'instance of', 'sports team']
+Note: Subject 'Hull City' is not used in other triples.
+
+Triple: ['Fulham', 'instance of', 'sports team']
+Note: Subject 'Fulham' is not used in other triples.
+
+Triple: ['Czech Revelation of the Year', 'instance of', 'sports award']
+Note: Subject 'Czech Revelation of the Year' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q10736,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Ipswich Town', 'instance of', 'sports team']
+Note: Subject 'Ipswich Town' is not used in other triples.
+
+Triple: ['Blackpool', 'instance of', 'sports team']
+Note: Subject 'Blackpool' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."

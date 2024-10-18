@@ -1,0 +1,625 @@
+subject,correction_prompt
+Q607066,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Serie B', 'instance of', 'sports league']
+Note: Subject 'Serie B' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q607227,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['2011', 'instance of', 'year']
+Note: Subject '2011' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q60740771,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Nancy Floreen', 'instance of', 'human']
+Note: Subject 'Nancy Floreen' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6074268,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['English Premier League', 'instance of', 'sports league']
+Note: Subject 'English Premier League' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6074470,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['1983', 'instance of', 'date']
+Note: Subject '1983' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q60776100,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['2006', 'instance of', 'year']
+Note: Subject '2006' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6085915,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Istanbul', 'instance of', 'geographic entity']
+Note: Subject 'Istanbul' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q608815,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['33 years', 'instance of', 'time period']
+Note: Subject '33 years' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6096719,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Ivan Krstiƒá', 'occupation', 'Employee']
+Error: Object 'Employee' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q60970,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Monday', 'instance of', 'day of the week']
+Note: Subject 'Monday' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61005008,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Carrie Chase Davis', 'educated at', 'Q84966']
+Error: Object 'Q84966' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Howard University College of Medicine', 'instance of', 'educational institution']
+Note: Subject 'Howard University College of Medicine' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q610249,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Second Division', 'instance of', 'sports competition']
+Note: Subject 'Second Division' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61050992,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Commonwealth Bank', 'instance of', 'bank']
+Note: Subject 'Commonwealth Bank' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61058575,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Anne Lise Ødnøy', 'position held', 'provost']
+Error: Object 'provost' not defined as an instance.
+
+Triple: ['Anne Lise Ødnøy', 'position held', 'bishop']
+Error: Object 'bishop' not defined as an instance.
+
+Triple: ['Anne Lise Ødnøy', 'religion or worldview', 'Christianity']
+Error: Object 'Christianity' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Stavanger Cathedral', 'instance of', 'sacred architecture']
+Note: Subject 'Stavanger Cathedral' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6106404,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['J. M. Gordon', 'occupation', 'member of the chorus']
+Error: Object 'member of the chorus' not defined as an instance.
+
+Triple: ['J. M. Gordon', 'employer', ""D'Oyly Carte Opera Company touring companies""]
+Error: Object 'D'Oyly Carte Opera Company touring companies' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Patience', 'instance of', ""Gilbert and Sullivan's work""]
+Note: Subject 'Patience' is not used in other triples.
+
+Triple: ['1883', 'instance of', 'year']
+Note: Subject '1883' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61071,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['1915', 'instance of', 'year']
+Note: Subject '1915' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q610788,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['José Sócrates', 'instance of', 'human']
+Note: Subject 'José Sócrates' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q610855,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Felipe dal Belo', 'work period (start)', '21 August 2012']
+Error: Object '21 August 2012' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6111158,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Neil McBain', 'occupation', 'soccer manager']
+Error: Object 'soccer manager' not defined as an instance.
+
+Unused Declarations:
+Triple: ['professional football', 'instance of', 'occupation']
+Note: Subject 'professional football' is not used in other triples.
+
+Triple: ['foot injury', 'instance of', 'medical condition']
+Note: Subject 'foot injury' is not used in other triples.
+
+Triple: ['manager', 'instance of', 'occupation']
+Note: Subject 'manager' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6112322,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Jack Elkes', 'occupation', 'football player']
+Error: Object 'football player' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6112564,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Frank Costello', 'instance of', 'human']
+Note: Subject 'Frank Costello' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6112720,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Jack Gilpin', 'occupation', 'priest']
+Error: Object 'priest' not defined as an instance.
+
+Triple: ['Jack Gilpin', 'religion or worldview', 'Episcopal Church']
+Error: Object 'Episcopal Church' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6113105,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Turf Moor', 'instance of', 'geographic location']
+Note: Subject 'Turf Moor' is not used in other triples.
+
+Triple: ['Notts County', 'instance of', 'sports team']
+Note: Subject 'Notts County' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6113437,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Len Hill', 'instance of', 'human']
+Note: Subject 'Len Hill' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6113547,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['May 1894', 'instance of', 'date']
+Note: Subject 'May 1894' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6114047,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['August 1901', 'instance of', 'date']
+Note: Subject 'August 1901' is not used in other triples.
+
+Triple: ['Southern League Division Two', 'instance of', 'sports league']
+Note: Subject 'Southern League Division Two' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6114577,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Jack Perkins', 'country of citizenship', 'United States']
+Error: Object 'United States' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q611501,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Serie A', 'instance of', 'sports team']
+Note: Subject 'Serie A' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6116323,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Jackie Fahey', 'position held', 'Teachta D√°la']
+Error: Object 'Teachta D√°la' not defined as an instance.
+
+Triple: ['Jackie Fahey', 'country of citizenship', 'Ireland']
+Error: Object 'Ireland' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Tipperary South constituency', 'instance of', 'geographic entity']
+Note: Subject 'Tipperary South constituency' is not used in other triples.
+
+Triple: ['D√°il √âireann', 'instance of', 'political territorial entity']
+Note: Subject 'D√°il √âireann' is not used in other triples.
+
+Triple: ['1965 general election', 'instance of', 'election']
+Note: Subject '1965 general election' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6116383,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Puerto Rico', 'instance of', 'sovereign state']
+Note: Subject 'Puerto Rico' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6120122,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['July 1999', 'instance of', 'date']
+Note: Subject 'July 1999' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6120333,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['2008', 'instance of', 'year']
+Note: Subject '2008' is not used in other triples.
+
+Triple: ['2009', 'instance of', 'year']
+Note: Subject '2009' is not used in other triples.
+
+Triple: ['2010', 'instance of', 'year']
+Note: Subject '2010' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q612077,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['António da Silva', 'work period (start)', '1997']
+Error: Object '1997' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61225,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['UEFA Euro 1996', 'instance of', 'sporting event']
+Error: Instance type 'sporting event' not valid for object 'UEFA Euro 1996' with property 'participant in'
+
+Triple: ['Bayern Munich', 'league', ""Germany's top-flight""]
+Error: Subject 'Bayern Munich' type 'sports team' does not satisfy the property 'league' subject constraints: ['sports award', 'sports transaction', 'sporting event', 'sports organization', 'competition', 'human']
+
+Triple: ['Hamburger SV', 'league', ""Germany's top-flight""]
+Error: Subject 'Hamburger SV' type 'sports team' does not satisfy the property 'league' subject constraints: ['sports award', 'sports transaction', 'sporting event', 'sports organization', 'competition', 'human']
+
+Triple: ['Markus Babbel', 'participant in', 'UEFA Euro 1996']
+Error: Object 'UEFA Euro 1996' type 'sporting event' does not satisfy the property 'participant in' value constraints: ['fictional occurrence', 'activity', 'event', 'work', 'occurrence', 'experiment', 'organization']
+
+Triple: ['Markus Babbel', 'number of matches played/races/starts', 167]
+Error: Object '167' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Manchester United', 'instance of', 'sports team']
+Note: Subject 'Manchester United' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6125490,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['ANFP', 'instance of', 'professional name']
+Note: Subject 'ANFP' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6128578,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['La mañana debe seguir gris', 'instance of', 'novel']
+Note: Subject 'La mañana debe seguir gris' is not used in other triples.
+
+Triple: ['El amor que me juraste', 'instance of', 'novel']
+Note: Subject 'El amor que me juraste' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6128666,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Allsop', 'occupation', 'judge']
+Error: Object 'judge' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6130498,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Cumann na nGaedhael', 'instance of', 'political party']
+Note: Subject 'Cumann na nGaedhael' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6130499,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Burke', 'occupation', 'farmer by profession']
+Error: Object 'farmer by profession' not defined as an instance.
+
+Triple: ['James Burke', 'position held', 'Fine Gael Teachta D√°la (TD)']
+Error: Object 'Fine Gael Teachta D√°la (TD)' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6131514,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Coburn', 'position held', 'independent TD']
+Error: Object 'independent TD' not defined as an instance.
+
+Triple: ['James Coburn', 'position held', 'TD for National League Party']
+Error: Object 'TD for National League Party' not defined as an instance.
+
+Unused Declarations:
+Triple: ['1932 general election', 'instance of', 'general election']
+Note: Subject '1932 general election' is not used in other triples.
+
+Triple: ['1933 general election', 'instance of', 'general election']
+Note: Subject '1933 general election' is not used in other triples.
+
+Triple: ['September 1927 general election', 'instance of', 'general election']
+Note: Subject 'September 1927 general election' is not used in other triples.
+
+Triple: ['National League Party', 'instance of', 'political party']
+Note: Subject 'National League Party' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6131578,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Collins', 'date of death', '1967']
+Error: Object '1967' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6132198,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James D. Robinson III', 'educated at', 'Harvard University']
+Error: Object 'Harvard University' not defined as an instance.
+
+Triple: ['James D. Robinson III', 'occupation', 'businessperson']
+Error: Object 'businessperson' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6132581,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Devins', 'occupation', 'anti-Treaty Sinn Féin TD to the 3rd Dáil at the 1922 general election']
+Error: Object 'anti-Treaty Sinn Féin TD to the 3rd Dáil at the 1922 general election' not defined as an instance.
+
+Unused Declarations:
+Triple: ['the 3rd Dáil', 'instance of', 'public office']
+Note: Subject 'the 3rd Dáil' is not used in other triples.
+
+Triple: ['1922 general election', 'instance of', 'political territorial entity']
+Note: Subject '1922 general election' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6133272,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['September 27, 1923', 'instance of', 'date']
+Note: Subject 'September 27, 1923' is not used in other triples.
+
+Triple: ['Plains ceremony', 'instance of', 'ceremony']
+Note: Subject 'Plains ceremony' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6134974,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Teachta Dála for Meath constituency', 'instance of', 'political office']
+Error: Instance type 'political office' not valid for object 'Teachta Dála for Meath constituency' with property 'position held'
+
+Triple: ['James Griffin', 'position held', 'Teachta Dála for Meath constituency']
+Error: Object 'Teachta Dála for Meath constituency' type 'political office' does not satisfy the property 'position held' value constraints: ['historical position', ""men's association football club"", ""men's association football team"", 'professorship', 'fictional office, position, or title', 'episcopal title', 'military position', 'East Asian government official', 'Council of state', 'artist-in-residence', 'title of authority', 'position', 'noble title', 'public office', 'administrative territorial entity', 'profession']
+
+Unused Declarations:
+Triple: ['Meath constituency', 'instance of', 'administrative territorial entity']
+Note: Subject 'Meath constituency' is not used in other triples.
+
+Triple: ['1957 general election', 'instance of', 'political event']
+Note: Subject '1957 general election' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6137209,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Channel Nine', 'instance of', 'television channel']
+Note: Subject 'Channel Nine' is not used in other triples.
+
+Triple: ['England', 'instance of', 'sovereign state']
+Note: Subject 'England' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6137564,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Toshio Okada', 'occupation', 'employee']
+Error: Object 'employee' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6137768,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Lanier', 'date of birth', '1800-01-01']
+Error: Object '1800-01-01' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6137912,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Ledden', 'given name', 'James']
+Error: Object 'James' not defined as an instance.
+
+Triple: ['James Ledden', 'family name', 'Ledden']
+Error: Object 'Ledden' not defined as an instance.
+
+Triple: ['James Ledden', 'occupation', 'politician']
+Error: Object 'politician' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61382,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['5 October 2008', 'instance of', 'date']
+Note: Subject '5 October 2008' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6140025,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Morrill', 'position held', 'president']
+Error: Object 'president' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6140175,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['1922 general election', 'instance of', 'election']
+Note: Subject '1922 general election' is not used in other triples.
+
+Triple: ['1923 general election', 'instance of', 'election']
+Note: Subject '1923 general election' is not used in other triples.
+
+Triple: ['Louth constituency', 'instance of', 'electoral district']
+Note: Subject 'Louth constituency' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6143190,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Master of Mass Communication degree', 'instance of', 'educational degree']
+Note: Subject 'Master of Mass Communication degree' is not used in other triples.
+
+Triple: ['Doctorate', 'instance of', 'educational degree']
+Note: Subject 'Doctorate' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q614334,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Unirea Urziceni', 'instance of', 'sports team']
+Note: Subject 'Unirea Urziceni' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6145493,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['James Widdoes', 'occupation', 'performing']
+Error: Object 'performing' not defined as an instance.
+
+Unused Declarations:
+Triple: ['1977 Equity Library Theatre revival of Wonderful Town', 'instance of', 'production']
+Note: Subject '1977 Equity Library Theatre revival of Wonderful Town' is not used in other triples.
+
+Triple: ['1982 Broadway musical Is there life after high school?', 'instance of', 'production']
+Note: Subject '1982 Broadway musical Is there life after high school?' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q614675,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Patrick McEnroe', 'educated at', 'Stanford']
+Error: Object 'Stanford' not defined as an instance.
+
+Triple: ['Patrick McEnroe', 'occupation', 'professional tennis player']
+Error: Object 'professional tennis player' not defined as an instance.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q614693,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['9 November 1555', 'instance of', 'date']
+Note: Subject '9 November 1555' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61497,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Berlin', 'instance of', 'geographic location']
+Note: Subject 'Berlin' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61524,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Yad Vashem', 'instance of', 'memory institution']
+Note: Subject 'Yad Vashem' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6152775,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Westchester, New York', 'instance of', 'geographic entity']
+Error: Instance type 'geographic entity' not associated with any property for subject 'Westchester, New York'
+
+Triple: ['twin daughters', 'instance of', 'group of humans']
+Error: Instance type 'group of humans' not valid for object 'twin daughters' with property 'child'
+
+Triple: ['Jane Skinner', 'place of residence', 'Westchester, New York']
+Error: Error: Property 'place of residence' not found in properties.
+
+Triple: ['Roger Goodell', 'place of residence', 'Westchester, New York']
+Error: Error: Property 'place of residence' not found in properties.
+
+Triple: ['Jane Skinner', 'child', 'twin daughters']
+Error: Relation 'child' not present in subject properties for 'Jane Skinner'
+
+Triple: ['Roger Goodell', 'child', 'twin daughters']
+Error: Relation 'child' not present in subject properties for 'Roger Goodell'
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6153314,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['The Fortnightly Review', 'instance of', 'periodical']
+Note: Subject 'The Fortnightly Review' is not used in other triples.
+
+Triple: ['Daily Telegraph', 'instance of', 'newspaper']
+Note: Subject 'Daily Telegraph' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q61578,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Serie C1', 'instance of', 'sports league']
+Note: Subject 'Serie C1' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6158985,"The following triples for the subject need attention:
+
+Errors:
+Triple: ['Valerie Miles', 'occupation', 'editor']
+Error: Object 'editor' not defined as an instance.
+
+Unused Declarations:
+Triple: ['Granta en espa√±ol', 'instance of', 'creative work']
+Note: Subject 'Granta en espa√±ol' is not used in other triples.
+
+Triple: ['Aurelio Major', 'instance of', 'human']
+Note: Subject 'Aurelio Major' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+Q6160197,"The following triples for the subject need attention:
+
+Unused Declarations:
+Triple: ['Mauno Koivisto', 'instance of', 'human']
+Note: Subject 'Mauno Koivisto' is not used in other triples.
+
+Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."

@@ -5,10 +5,14 @@ import csv
 import os
 import ast
 from .utils import AzureOpenAIClient
+from src.triple_analysis import analyze_triples
 
 # ---------- Triple Extraction Module ----------
 def extract_triples(text: str) -> list:
     """Extracts triples from a given text using ast.literal_eval and regex as a fallback."""
+    if not text or text.strip() == "":
+        return []
+
     try:
         parsed = ast.literal_eval(text)
         if isinstance(parsed, list) and all(isinstance(item, list) and len(item) == 3 for item in parsed):
@@ -51,69 +55,116 @@ def build_properties_constraints(subject_data, properties_data):
     return text
 
 # ---------- Response Saving Module ----------
-def save_response(subject, triples, output_file):
-    """Saves the generated triples for a subject into a CSV file. 
-    If the file is empty, it writes headers as the first line.
-    Otherwise, it appends the new data."""
-    header = [subject, triples]
-    file_exists = os.path.exists(output_file)
-    
-    with open(output_file, 'a', newline='') as f:
-        writer = csv.writer(f, quoting=csv.QUOTE_ALL)
-        
-        if not file_exists or os.stat(output_file).st_size == 0:
-            writer.writerow(header)  # Write column headers if the file doesn't exist or is empty
+def save_response(subject, triples, output_file, cycle):
+    """Saves or updates the generated triples for a subject into a CSV file."""
+    try:
+        # Read existing responses
+        responses_df = pd.read_csv(output_file, quoting=csv.QUOTE_MINIMAL)
+    except FileNotFoundError:
+        # If file doesn't exist, create a new DataFrame
+        responses_df = pd.DataFrame(columns=['subject', 'triples', 'cycle'])
 
-        writer.writerow([subject, json.dumps(triples)])  # Append new row with data
+    # Convert triples to JSON string for correct escaping
+    triples_str = json.dumps(triples)
 
+    # Check if subject already exists
+    if subject in responses_df['subject'].values:
+        # Update existing row
+        responses_df.loc[responses_df['subject'] == subject, 'triples'] = triples_str
+        responses_df.loc[responses_df['subject'] == subject, 'cycle'] = cycle
+    else:
+        # Append new row
+        new_row = pd.DataFrame({'subject': [subject], 'triples': [triples_str], 'cycle': [cycle]})
+        responses_df = pd.concat([responses_df, new_row], ignore_index=True)
+
+    # Save the updated DataFrame
+    responses_df.to_csv(output_file, index=False)
 
 # ---------- Correction Prompt Generation Module ----------
-def generate_correction_prompt(base_prompt, subject, original_triples, errors):
+def generate_correction_prompt(base_prompt, original_triples, errors):
     """Generates a correction prompt including errors and original triples."""
     correction_prompt = f"""{base_prompt}
 
-    The following triples for the subject '{subject}' need attention:
+Original Triples:
+{json.dumps(original_triples, indent=2) if original_triples else "No original triples found."}
 
-    Errors:
-    {errors}
+Errors:
+{errors}
 
-    Original Triples:
-    {json.dumps(original_triples, indent=2)}
-
-    Please provide a corrected set of triples for this subject, addressing the errors mentioned above and considering whether the unused declarations are necessary or can be removed.
-    """
+Remember to follow all the guidelines mentioned in the base prompt, including using only the specified properties and ensuring all relationships are consistent with the ontology.
+"""
     return correction_prompt
 
 # ---------- Triple Generation Main Module ----------
-def generate_triples(subjects_file, properties_file, output_file, ground_truth_file, correction_file=None, sample_size=30):
+def generate_triples(subjects_file, properties_file, output_file, ground_truth_file, chunk_output_dir, correction_file=None, cycle=0):
     with open(properties_file) as f:
         properties_data = json.load(f)
     
     with open(subjects_file) as f:
         subjects_data = json.load(f)
 
-    # Load ground truth sentences
+    if cycle > 1:
+        previous_cycle_file = os.path.join(chunk_output_dir, f'responses_cycle_{cycle-1}.csv')
+        if os.path.exists(previous_cycle_file):
+            previous_responses = pd.read_csv(previous_cycle_file)
+            previous_subjects = set(previous_responses['subject'])
+        else:
+            previous_subjects = set()
+
     ground_truth = pd.read_csv(ground_truth_file)
+
+    try:
+        existing_responses = pd.read_csv(output_file)
+        processed_subjects = set(existing_responses['subject'])
+    except FileNotFoundError:
+        existing_responses = pd.DataFrame(columns=['subject', 'triples', 'cycle'])
+        processed_subjects = set()
 
     subjects_dict = {}
     for item in subjects_data['data']:
         subjects_dict.update(item)
 
-    if correction_file:
-        existing_responses = pd.read_csv(output_file)
-        correction_prompts = pd.read_csv(correction_file)
-        sample_subjects = existing_responses.sample(n=sample_size) if sample_size else existing_responses
-    else:
-        sample_subjects = pd.DataFrame(list(subjects_dict.keys()), columns=['subject'])
-        if sample_size:
-            sample_subjects = sample_subjects.sample(n=sample_size)
+    print(f"Correction file: {correction_file}")
 
-    for index, row in sample_subjects.iterrows():
+    if correction_file:
+        correction_prompts = pd.read_csv(correction_file)
+        all_subjects = pd.DataFrame(correction_prompts['subject'].unique(), columns=['subject'])
+    else:
+        all_subjects = pd.DataFrame(list(subjects_dict.keys()), columns=['subject'])
+
+    print(f"Processing {len(subjects_dict)} subjects in cycle {cycle}")
+
+    if correction_file and os.path.exists(correction_file):
+        with open(correction_file, 'r') as f:
+            correction_content = f.read().strip()
+            if correction_content == "subject,correction_prompt":
+                print(f"Correction file for cycle {cycle} is empty. Ending iteration.")
+                return None
+
+    total_subjects = len(all_subjects)
+    processed_count = 0
+
+    for index, row in all_subjects.iterrows():
         subject = row['subject']
+
+        # Check if the subject has already been processed in this cycle
+        if subject in processed_subjects:
+            print(f"Skipping subject {subject} as it has already been processed in this cycle.")
+            processed_count += 1
+            continue
+        
         # Fetch the ground truth sentence
         ground_truth_sentence = ground_truth[ground_truth['subject'] == subject]['combined_sentence'].values[0]
 
-        original_triples = extract_triples(row['triples']) if 'triples' in row else []
+        original_triples = None
+        if cycle > 1:
+            previous_cycle_file = os.path.join(chunk_output_dir, f'responses_cycle_{cycle-1}.csv')
+            if os.path.exists(previous_cycle_file):
+                previous_responses = pd.read_csv(previous_cycle_file)
+                previous_row = previous_responses[previous_responses['subject'] == subject]
+                if not previous_row.empty:
+                    original_triples = json.loads(previous_row.iloc[0]['triples'])
+
         if correction_file:
             error_data = correction_prompts[correction_prompts['subject'] == subject]
             errors = error_data['correction_prompt'].values[0] if not error_data.empty else None
@@ -123,7 +174,7 @@ def generate_triples(subjects_file, properties_file, output_file, ground_truth_f
         subject_data = subjects_dict.get(subject, None)
         if subject_data:
             properties = build_properties_constraints(subject_data, properties_data)
-            base_prompt = f"""Given the sentence "{ground_truth_sentence},
+            base_prompt = f"""Given the sentence "{ground_truth_sentence}",
 
             Follow these steps:
             1. Identify instances of classes mentioned in the information.
@@ -140,18 +191,17 @@ def generate_triples(subjects_file, properties_file, output_file, ground_truth_f
             - 'object' is either a class from the ontology (for "instance of"), another instance, or a literal value
 
             Each triple must comply with the ontology constraints.
+            Use only information from the sentence.
 
             The list should begin with all "instance of" triples, followed by the other relationship triples.
 
             Provide no additional information beyond the list of triples.
             """
-            
+
             if errors:
-                prompt = generate_correction_prompt(base_prompt, subject, original_triples, errors)
+                prompt = generate_correction_prompt(base_prompt, original_triples, errors)
             else:
                 prompt = f"{base_prompt}\n\nGenerate triples for the sentence:"
-
-            print(prompt)
             
             # Call OpenAI API to generate or correct triples
             client = AzureOpenAIClient()
@@ -160,15 +210,45 @@ def generate_triples(subjects_file, properties_file, output_file, ground_truth_f
             response = client.send_request("", prompt)  
             response = response.choices[0].message.content
 
+            print(prompt)
             print(response)
 
-            new_triples = extract_triples(response)
-            if new_triples:
-                save_response(subject, new_triples, output_file)
-                print(f"Saved {'corrected' if errors else 'new'} response for subject {subject}")
-            else:
-                print(f"Warning: No valid triples found for subject {subject}")
+            triples = extract_triples(response)
+            save_response(subject, triples, output_file, cycle)
+            print(f"Saved new response for subject {subject}")
+
         else:
             print(f"Subject {subject} not found in JSON data.")
 
+        processed_subjects.add(subject)
+        processed_count += 1
+        completion_percentage = (processed_count / total_subjects) * 100
+        print(f"Processing completed for {subject}: {completion_percentage:.2f}% done.")
+
+    if cycle > 1:
+        current_responses = pd.read_csv(output_file)
+        current_subjects = set(current_responses['subject'])
+        
+        previous_cycle_file = os.path.join(chunk_output_dir, f'responses_cycle_{cycle-1}.csv')
+        if os.path.exists(previous_cycle_file):
+            previous_responses = pd.read_csv(previous_cycle_file)
+            previous_subjects = set(previous_responses['subject'])
+            
+            missing_subjects = previous_subjects - current_subjects
+
+            if missing_subjects:
+                print(f"Found {len(missing_subjects)} responses from the previous cycle not in the current cycle. Adding them now.")
+                
+                for subject in missing_subjects:
+                    previous_row = previous_responses[previous_responses['subject'] == subject].iloc[0]
+                    new_row = pd.DataFrame({'subject': [subject], 'triples': [previous_row['triples']], 'cycle': [cycle]})
+                    current_responses = pd.concat([current_responses, new_row], ignore_index=True)
+
+                current_responses.to_csv(output_file, index=False)
+                print(f"Updated {output_file} with responses from the previous cycle.")
+
+    print("Recalculating metrics after adding missing subjects...")
+    results = analyze_triples(output_file, ground_truth_file, properties_file, subjects_file)
+    
     print("Processing completed.")
+    return results

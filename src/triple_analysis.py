@@ -2,6 +2,7 @@ import json
 import ast
 import pandas as pd
 import re
+from typing import List, Dict, Any
 
 # ---------- Data Loading Module ----------
 class DataLoader:
@@ -36,13 +37,6 @@ class DataLoader:
 
 # ---------- Triple Processing Module ----------
 class TripleProcessor:
-    @staticmethod
-    def extract_triples(text: str) -> list:
-        """Extract triples from a string using regex."""
-        triple_pattern = re.compile(r"\['(.*?)',\s*'(.*?)',\s*'(.*?)'\]")
-        matches = triple_pattern.findall(text)
-        return [(subject, predicate, obj) for subject, predicate, obj in matches 
-                if (subject, predicate, obj) != ('subject', 'property', 'object')]
 
     @staticmethod
     def parse_ground_truth_triples(row):
@@ -169,13 +163,27 @@ class MetricsCalculator:
         correction_prompts = []
 
         for _, row in responses.iterrows():
+
             subject = row['subject']
             response_triples = ast.literal_eval(row['triples'])
-            subject_properties = subject_properties_dict.get(subject, set())
 
+            # Handle empty response
+            if not response_triples:
+                empty_prompt = PromptGenerator.generate_empty_response_prompt(subject)
+                correction_prompts.append((subject, empty_prompt))
+                continue
+
+            subject_properties = subject_properties_dict.get(subject, set())
             errors, unused_declarations, correct_triples = [], [], 0
 
             for triple in response_triples:
+                if not isinstance(triple, list) or len(triple) != 3:
+                    print(f"Discarding malformed triple: {triple}")
+                    continue
+
+                # Convert the third element to string if it's a number
+                triple = [triple[0], triple[1], str(triple[2])]
+
                 if triple[1] == 'instance of':
                     result, log = Validator.is_correct_instance_of(triple, properties, response_triples, property_constraints)
                     if result == "unused":
@@ -286,7 +294,7 @@ class PromptGenerator:
     @staticmethod
     def generate_correction_prompt(subject, response_triples, errors, unused_declarations):
         """Generate a correction prompt including errors and unused triples."""
-        prompt = f"The following triples for the subject '{subject}' need attention:\n\n"
+        prompt = f"The following triples for the subject need attention:\n\n"
 
         if errors:
             prompt += "Errors:\n"
@@ -298,7 +306,14 @@ class PromptGenerator:
             for triple, message in unused_declarations:
                 prompt += f"Triple: {triple}\nNote: {message}\n\n"
 
-        prompt += "Please provide a corrected set of triples for this subject, addressing the errors and unused declarations mentioned above."
+        prompt += "Please provide a corrected set of triples for this subject, addressing the errors or unused declarations mentioned above."
+        return prompt
+    
+    @staticmethod
+    def generate_empty_response_prompt(subject):
+        """Generate a prompt for empty responses."""
+        prompt = (f"The response for the subject '{subject}' was empty. "
+                  "Please provide a valid set of triples that represent the subject's properties and relations.")
         return prompt
 
 # ---------- Main Function ----------
@@ -340,7 +355,47 @@ def analyze_triples(response_file, ground_truth_file, properties_file, subjects_
         responses, ground_truth, properties, property_constraints, subject_properties_dict
     )
 
+    # Add the analyze_single_subject function to the returned results
+    precision_results['analyze_single_subject'] = lambda subject, triples: analyze_single_subject(
+        subject, triples, ground_truth, properties, subject_properties_dict
+    )
+
     return precision_results
+
+def analyze_single_subject(subject: str, triples: List[List[str]], ground_truth: pd.DataFrame, 
+                           properties: Dict[str, Any], subjects_dict: Dict[str, Any]) -> Dict[str, float]:
+    """
+    Analyze triples for a single subject and return metrics.
+
+    Args:
+    subject (str): The subject being analyzed.
+    triples (List[List[str]]): List of triples for the subject.
+    ground_truth (pd.DataFrame): Ground truth data.
+    properties (Dict[str, Any]): Properties data.
+    subjects_dict (Dict[str, Any]): Dictionary of subjects and their properties.
+
+    Returns:
+    Dict[str, float]: Dictionary containing precision, recall, and F1 score for the subject.
+    """
+    # Create a DataFrame with a single row for the subject
+    subject_df = pd.DataFrame({'subject': [subject], 'triples': [json.dumps(triples)]})
+
+    # Get the ground truth for this subject
+    subject_ground_truth = ground_truth[ground_truth['subject'] == subject]
+
+    # Get the properties for this subject
+    subject_properties = set(prop['label'] for prop in subjects_dict.get(subject, []))
+
+    # Calculate metrics using the existing MetricsCalculator
+    metrics = MetricsCalculator.calculate_overall_precision(
+        subject_df, subject_ground_truth, properties, properties, {subject: subject_properties}
+    )
+
+    return {
+        'precision': metrics['average_precision'],
+        'recall': metrics['average_recall'],
+        'f1_score': metrics['f1_score']
+    }
 
 # This allows the script to be imported without running the analysis
 if __name__ == "__main__":

@@ -1,0 +1,2 @@
+cycle,average_precision,average_recall,cumulative_precision,f1_score
+1,0.375,0.7222222222222222,0.36363636363636365,0.4936708860759493
